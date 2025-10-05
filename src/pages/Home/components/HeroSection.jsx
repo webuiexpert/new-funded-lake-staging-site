@@ -6,10 +6,10 @@ import lockerIcon from "/assets/shape_locker.png"
 
 function HeroSection() {
   return (
-    <div className='hero-section lg:h-screen py-16 relative'>
+    <div className='hero-section md:py-24 relative'>
           <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
-          <img className="absolute md:w-30 w-16 bottom-36 left-10" src={walletIcon} alt="" />
-          <img className="absolute md:w-30 w-16 bottom-36 right-10" src={lockerIcon} alt="" />
+          <img className="absolute md:w-20 w-16 bottom-36 left-10 opacity-30" src={walletIcon} alt="" />
+          <img className="absolute md:w-20 w-16 bottom-36 right-10 opacity-30" src={lockerIcon} alt="" />
         <div className='text-center relative z-10'>
             <h1 className="text-white font-bold text-3xl sm:text-5xl md:text-6xl lg:text-[80px] leading-tight">
               WHERE <span className="text-[var(--color-primary)]">TRADERS</span>
@@ -22,7 +22,7 @@ function HeroSection() {
               in capital!”
             </p>
         </div>
-        <div className="mt-10 text-center flex flex-col gap-10">
+        <div className="my-10 text-center flex flex-col gap-10">
           <PrimaryButton text="Join our discord community"  link="https://yourwebsite.com/about"/>
           <PrimaryButton text="Signup now"  link="https://yourwebsite.com/about"/>
         </div>

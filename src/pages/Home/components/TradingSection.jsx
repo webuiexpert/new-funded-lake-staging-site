@@ -19,28 +19,28 @@ function TradingSection() {
       <div className="relative z-[0] w-full max-w-6xl mx-auto flex flex-wrap px-4 lg:px-0 mt-10 gap-x-10 gap-y-10 justify-center">
         <div className="trade-col hover:scale-105 duration-200 md:w-[31%] w-[80%] flex flex-col items-center gap-4 p-5 rounded-2xl">
             <img src={tradeIcon1} alt="" width={60} />
-            <h5 className="text-2xl font-bold uppercase ">Forex</h5>
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
+            <h5 className="text-2xl font-bold text-white uppercase">Forex</h5>
+            <p className="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
         </div>
         <div className="trade-col hover:scale-105 duration-200 md:w-[31%] w-[80%] flex flex-col items-center gap-4 p-5 rounded-2xl">
             <img src={tradeIcon2} alt="" width={60} />
-            <h5 className="text-2xl font-bold uppercase ">Forex</h5>
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
+            <h5 className="text-2xl font-bold text-white uppercase">Metal</h5>
+            <p className="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
         </div>
         <div className="trade-col hover:scale-105 duration-200 md:w-[31%] w-[80%] flex flex-col items-center gap-4 p-5 rounded-2xl">
             <img src={tradeIcon3} alt="" width={60} />
-            <h5 className="text-2xl font-bold uppercase ">Forex</h5>
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
+            <h5 className="text-2xl font-bold text-white uppercase ">Crypto</h5>
+            <p className="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
         </div>
         <div className="trade-col hover:scale-105 duration-200 md:w-[31%] w-[80%] flex flex-col items-center gap-4 p-5 rounded-2xl">
             <img src={tradeIcon4} alt="" width={60} />
-            <h5 className="text-2xl font-bold uppercase ">Forex</h5>
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
+            <h5 className="text-2xl font-bold text-white uppercase ">Indices</h5>
+            <p className="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
         </div>
         <div className="trade-col hover:scale-105 duration-200 md:w-[31%] w-[80%] flex flex-col items-center gap-4 p-5 rounded-2xl">
             <img src={tradeIcon5} alt="" width={60} />
-            <h5 className="text-2xl font-bold uppercase ">Forex</h5>
-            <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
+            <h5 className="text-2xl font-bold text-white uppercase ">Commodities</h5>
+            <p className="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam.</p>
         </div>
 
       </div>

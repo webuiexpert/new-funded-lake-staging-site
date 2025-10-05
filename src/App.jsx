@@ -6,10 +6,12 @@ import Faq from "./pages/Faq/Faq";
 import ForexExpro from "./pages/Forex Expo Dubai/ForexExpo";
 import ContactUS from "./pages/Contact Us/ContactUS";
 import Footer from "./Components/Footer";
+import CustomCursor from "./Components/CustomCursor";
 
 function App() {
   return (
     <Router>
+      <CustomCursor />
       <div className="bg-[#06080e]">
         <NavBar />
         <div className="mx-auto">
