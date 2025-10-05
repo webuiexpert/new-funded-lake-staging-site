@@ -29,16 +29,15 @@
   }
 
   --animate-marquee: marquee 40s linear infinite;
-} */
-/* .works-box ul:nth-child(2){
-  font-size: 3rem;
 }
+ /* .works-box ul:nth-child(2){
+  font-size: 3rem;
+} */
 
 html, body {
   font-family: var(--font-primary);
   background-color: var(--color-light);
 }
-
 
 h1{
   font-size:4.375rem;
