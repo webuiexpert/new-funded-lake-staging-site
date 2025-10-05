@@ -17,7 +17,6 @@ import img16 from '/assets/certificate-of-withdrawl16.jpg';
 import img17 from '/assets/certificate-of-withdrawl17.jpg'; 
 import img18 from '/assets/certificate-of-withdrawl18.jpg'; 
 import topSep from "/assets/top-saprator.jpg";
-import botSep from "/assets/bot-saprator.jpg";
 import { div } from 'framer-motion/client';
 
 const CertificateMarqueeSlider = () => {
@@ -25,10 +24,9 @@ const CertificateMarqueeSlider = () => {
   const images = [img18, img17, img16, img15, img14, img13, img12, img11, img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
 
   return (
-    <div className="overflow-hidden py-6 md:py-10 lg:py-24 min-w-full relative">
-      <img className="saperator absolute top-0 left-0 w-full" src={topSep} alt="" />
-      <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
-      <div className="relative animate-marquee group my-16">
+    <div className="overflow-hidden py-6 md:py-10 lg:pb-32 min-w-full relative">
+      <img className="saperator absolute bottom-0 left-0 w-full" src={topSep} alt="" />
+      <div className="relative animate-marquee group mb-1">
         <div className="flex gap-6 whitespace-nowrap min-w-[200vw] group-hover:[animation-play-state:paused]">
           {[...images, ...images].map((img, idx) => (
             <img

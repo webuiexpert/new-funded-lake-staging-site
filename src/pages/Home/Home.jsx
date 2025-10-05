@@ -24,9 +24,9 @@ function Home() {
       <StatsSection />
       <ComparisonTable />
       <TradingSection />
+      <SuccessStory />
       <CertificateMarqueeSlider />
       <TraderWorld />
-      <SuccessStory />
       <TrustPilotMarquee />
     </div>
   )

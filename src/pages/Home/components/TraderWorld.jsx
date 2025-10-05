@@ -8,8 +8,8 @@ import coineCubeIcon from "/assets/bicon-icons-bg-right.png"
 function TraderWorld() {
   return (
     <div class="trade-world-section font-lexend bg-blackish text-white relative">
-        <img className="absolute left-10 w-60 rotate-28" src={dollarCubeIcon} alt="" />
-              <img className="absolute bottom-16 right-10 w-56 -rotate-2 z-[1]" src={coineCubeIcon} alt="" />
+        <img className="absolute top-20 left-10 w-60 rotate-28" src={dollarCubeIcon} alt="" />
+        <img className="absolute bottom-16 right-10 w-56 -rotate-2 z-[1]" src={coineCubeIcon} alt="" />
       <div class="container w-full max-w-6xl mx-auto px-4 py-4 lg:px-0 lg:py-10">
         <div class="flex flex-wrap w-full lg:mb-12 mb-5 flex-col items-center text-center">
           <h2 className="md:leading-[1.1em] font-bold title-font mb-2 text-center text-white">

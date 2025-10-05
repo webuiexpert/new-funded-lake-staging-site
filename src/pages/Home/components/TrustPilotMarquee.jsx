@@ -13,6 +13,7 @@ import trustpilotimg11  from "/assets/trust-pilot-img11.png";
 import trustpilotimg12  from "/assets/trust-pilot-img12.png";
 import trustpilotimg13  from "/assets/trust-pilot-img13.png";
 import topSep from "/assets/top-saprator.jpg";
+import botSep from "/assets/bot-saprator.jpg";
 
 
 function TrustPilotMarquee() {
@@ -22,8 +23,9 @@ function TrustPilotMarquee() {
   return (
     <div className="overflow-hidden md:pb-36 relative whitespace-nowrap bg-[radial-gradient(circle,rgba(2,33,80,1)_6%,rgba(0,0,0,1)_47%)] py-10">
       <img className="saperator absolute bottom-0 left-0 w-full" src={topSep} alt="" />
+      <img className="saperator absolute top-0 left-0 w-full" src={botSep} alt="" />
       <div class="flex flex-wrap w-full md:mb-16 mb-8 flex-col items-center text-center">
-        <h2 class="sm:text-[50px] text-2xl font-bold title-font mb-2 text-white">
+        <h2 class="sm:text-[50px] text-2xl font-bold title-font mt-20 mb-2 text-white">
           <span className="text-white">WATCH SOME OF OUR</span><br/>
           <span className="text-gredient ">TRUST PILOT</span> REVIEWS
         </h2>

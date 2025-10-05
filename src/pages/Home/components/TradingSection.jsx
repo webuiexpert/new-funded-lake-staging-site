@@ -10,7 +10,7 @@ import coineCubeIcon from "/assets/bicon-icons-bg-right.png"
 function TradingSection() {
   return (
     <div className="relative py-10">
-        <img className="absolute md:w-30 w-16 bottom-0" src={walletIcon} alt="" />
+        <img className="absolute md:w-30 w-16 bottom-0 opacity-30" src={walletIcon} alt="" />
         <img className="absolute right-20 top-56 w-56 z-[0]" src={coineCubeIcon} alt="" />
       <h2 className="md:leading-[1.1em] font-bold title-font mb-2 text-center text-white">
         <span className="text-white">TRADE ANY MARKET,</span>

@@ -233,9 +233,15 @@ background: linear-gradient(90deg,rgba(34, 36, 51, 0.538) 0%, rgba(92, 93, 105, 
 .trustPilot-marquee:hover{
   animation-play-state: paused;
 }
+.email-pop {
+  background: linear-gradient(180deg,rgba(34, 31, 74, 1) 11%, rgba(8, 6, 17, 1) 50%);
+}
+.emailInput::placeholder{
+  color: #000;
+}
 
 
-
+/* -----------media screen-------- */
 
 @media (max-width:330px){
   h1{

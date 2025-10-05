@@ -7,11 +7,13 @@ import ForexExpro from "./pages/Forex Expo Dubai/ForexExpo";
 import ContactUS from "./pages/Contact Us/ContactUS";
 import Footer from "./Components/Footer";
 import CustomCursor from "./Components/CustomCursor";
+import EmailPopup from "./Components/EmailPopup";
 
 function App() {
   return (
     <Router>
       <CustomCursor />
+      <EmailPopup />
       <div className="bg-[#06080e]">
         <NavBar />
         <div className="mx-auto">
