@@ -7,6 +7,7 @@ import stepsIcon1 from "/assets/evaluation-phase-1.png";
 import stepsIcon2 from "/assets/funded-phase-2.png";
 import stepsIcon3 from "/assets/payout-icon.png";
 import arrowIcon from "/assets/blue-right-arrow.png";
+import {motion} from "framer-motion"
 
 function HowWorks() {
   const workSteps = [
@@ -40,7 +41,12 @@ function HowWorks() {
     <div className="text-white py-24 relative">
       <img className="saperator absolute top-0 left-0 w-full" src={topSep} alt="" />
       <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
-      <h2 className="text-center mt-2">How it works</h2>
+      <motion.h2 className="text-center mt-2"
+      initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1.1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.4 }} // 
+      >How it works</motion.h2>
       <div className="works-box max-w-6xl mx-auto md:mt-10 md:mb-16 mt-5">
         <div className="grid grid-cols- md:grid-cols-3 gap-8 text-center">
           {workSteps.map((item) => (

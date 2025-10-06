@@ -8,6 +8,7 @@ import ContactUS from "./pages/Contact Us/ContactUS";
 import Footer from "./Components/Footer";
 import CustomCursor from "./Components/CustomCursor";
 import EmailPopup from "./Components/EmailPopup";
+import ScrollToTopButton from "./Components/ScrollToTopButton";
 
 function App() {
   return (
@@ -27,7 +28,9 @@ function App() {
         </div>
         <Footer />
       </div>
+      <ScrollToTopButton />
     </Router>
+    
   );
 }
 

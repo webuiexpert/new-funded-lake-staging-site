@@ -27,8 +27,8 @@ export default function StatsSection() {
 
   return (
     <div className="bg-dark relative py-16 px-4 md:px-8 overflow-hidden">
-      <img className="absolute left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
-      <img className="absolute right-20 w-56 -rotate-52 z-[1]" src={coineCubeIcon} alt="" />
+      <img className="scale-plus-animation absolute left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
+      <img className="scale-plus-animation absolute right-20 w-56 -rotate-52 z-[1]" src={coineCubeIcon} alt="" />
       <div
         ref={ref}
         className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white relative z-[2]"

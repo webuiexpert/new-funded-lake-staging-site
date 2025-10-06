@@ -23,8 +23,8 @@ const Navbar = () => {
           <NavLink
             to="/who-we-are"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
-                isActive ? "bg-primary text-white" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
+                isActive ? "text-[var(--color-primary)]" : "text-white"
               }`
             }
           >
@@ -33,8 +33,8 @@ const Navbar = () => {
           <NavLink
             to="/faqs"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
-                isActive ? "bg-primary text-white" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
+                isActive ? "text-[var(--color-primary)]" : "text-white"
               }`
             }
           >
@@ -43,8 +43,8 @@ const Navbar = () => {
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
-                isActive ? "bg-primary text-white" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
+                isActive ? "text-[var(--color-primary)]" : "text-white"
               }`
             }
           >
@@ -53,8 +53,8 @@ const Navbar = () => {
           <NavLink
             to="/forex-expo"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
-                isActive ? "bg-primary text-white" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
+                isActive ? "text-[var(--color-primary)]" : "text-white"
               }`
             }
           >
@@ -94,8 +94,8 @@ const Navbar = () => {
           <NavLink
             to="/who-we-are"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
-                isActive ? "bg-primary text-white" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
+                isActive ? "text-[var(--color-primary)]" : "text-white"
               }`
             }
           >
@@ -104,8 +104,8 @@ const Navbar = () => {
           <NavLink
             to="/faqs"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
-                isActive ? "bg-primary text-white" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
+                isActive ? "text-[var(--color-primary)]" : "text-white"
               }`
             }
           >
@@ -114,8 +114,8 @@ const Navbar = () => {
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
-                isActive ? "bg-primary text-white" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
+                isActive ? "text-[var(--color-primary)]" : "text-white"
               }`
             }
           >

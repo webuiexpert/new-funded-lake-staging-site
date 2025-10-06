@@ -3,6 +3,7 @@ import featureImg1 from "/assets/why-choose-us-1.png";
 import featureImg2 from "/assets/why-choose-us-2.png";
 import featureImg3 from "/assets/why-choose-us-3.png";
 import featureImg4 from "/assets/why-choose-us-4.png";
+import {motion} from "framer-motion"
 
 function ChooseUs() {
   const featuresData = [
@@ -38,7 +39,12 @@ function ChooseUs() {
 
   return (
     <section className="text-white pt-2 pb-10 px-6 relative">
-      <h2 className="text-center">Why Choose Us</h2>
+      <motion.h2 className="text-center"
+      initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1.1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.4 }} // 
+      >Why Choose Us</motion.h2>
       <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-5">
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 text-center">
           {featuresData.map((item) => (

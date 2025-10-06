@@ -37,6 +37,7 @@
 html, body {
   font-family: var(--font-primary);
   background-color: var(--color-light);
+  overflow-x: hidden;
 }
 
 h1{
@@ -58,12 +59,12 @@ h4{
   color:var(--color-primary);
   text-transform: uppercase;
 }
-.hero-section{
+/* .hero-section{
   background-image: url('../public/assets/universe-img.png');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 36%;
-}
+} */
 .choose-box{
 box-shadow: 0px 0px 21px 5px #010b45;
 }
@@ -160,7 +161,7 @@ background: linear-gradient(90deg,rgba(34, 36, 51, 0.538) 0%, rgba(92, 93, 105, 
   background-size: cover;
 }
 .comparision-box{
-   background-image: url('../public/assets/blue-bg-light.png');
+  background-image: url('../public/assets/blue-bg-light.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +216,7 @@ background: linear-gradient(90deg,rgba(34, 36, 51, 0.538) 0%, rgba(92, 93, 105, 
   background-size: cover;
 }
 .success-story{
-    background-image: url('../public/assets/blue-bg-light.png');
+  background-image: url('../public/assets/blue-bg-light.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,7 +240,13 @@ background: linear-gradient(90deg,rgba(34, 36, 51, 0.538) 0%, rgba(92, 93, 105, 
 .emailInput::placeholder{
   color: #000;
 }
-
+.stats-col{
+  transition: all ease 0.5s;
+}
+.stats-col:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgb(0, 196, 245, 0.993) 0px 2px 4px -1px;
+  transition: all ease 1s;
+}
 
 /* -----------media screen-------- */
 
@@ -288,3 +295,53 @@ h2{
 }
 }
 
+.shape_circle_1 {
+  top: 20%;
+  left: 0;
+ 
+}
+
+.scale-plus-animation{
+    animation: scalePulse 6s ease-in-out infinite; /* 👈 Add animation */
+
+}
+.shape_circle {
+  opacity: 2.4;
+  max-width: 480px;
+  -webkit-filter: blur(10px);
+  filter: blur(30px);
+  rotate: 180deg;
+  border: 1px solid white;
+}
+
+.decoration_item {
+  z-index: 0;
+  position: absolute;
+}
+
+.navy-bg-gradient {
+    width: 889px;
+    height: 662px;
+    position: absolute;
+    background: radial-gradient(48.69% 39.15% at 50.02% 50.04%, #000760 0.01%, #000760 23.96%, #42005300 90%);
+    top: 0;
+    right: 0;
+    transform: translateY(-8%) rotate(40deg);
+    z-index: 0;
+}
+
+/* ✨ Keyframe for smooth scaling */
+@keyframes scalePulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
