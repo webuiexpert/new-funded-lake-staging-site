@@ -351,7 +351,6 @@ h4 {
   z-index: 0;
 }
 
-/* ✨ Keyframe for smooth scaling */
 @keyframes scalePulse {
   0% {
     transform: scale(1);
@@ -380,7 +379,21 @@ h4 {
   opacity: 0.3;
 }
 
-.ripple-11, .ripple-12, .ripple-13, .ripple-14 {
+.ripple-11, .ripple-12 {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  right: 40px;
+    top: 10%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  animation: ripple2 10s linear infinite;
+  opacity: 1;
+  transition: 0.4s;
+}
+ .ripple-13{
   width: 700px;
   height: 700px;
   position: absolute;

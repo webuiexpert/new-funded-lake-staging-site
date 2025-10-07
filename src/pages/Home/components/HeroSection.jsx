@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <div className="hero-section md:py-24 relative">
+    <div className="hero-section md:py-24 relative overflow-hidden">
       <div class="tg-bg-gradient d-block navy-bg-gradient"></div>
       <div class="tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
       <div class="ripple-shape2">
