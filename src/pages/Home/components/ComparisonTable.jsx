@@ -1,8 +1,7 @@
 import React from "react";
 import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
-import {motion} from "framer-motion"
-
+import { motion } from "framer-motion";
 
 function ComparisonTable() {
   const rows = [
@@ -35,15 +34,28 @@ function ComparisonTable() {
 
   return (
     <div className="flex items-center justify-center relative py-24">
-         <img className="saperator absolute top-0 left-0 w-full" src={topSep} alt="" />
-         <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
+      <img
+        className="saperator absolute top-0 left-0 w-full"
+        src={topSep}
+        alt=""
+      />
+      <img
+        className="saperator absolute bottom-0 left-0 w-full"
+        src={botSep}
+        alt=""
+      />
       <div className="w-full max-w-6xl mt-16">
-        <motion.h2 className="text-center"><span className="text-white"
-        initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1.1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          viewport={{ once: true, amount: 0.4 }} 
-        >Why Traders are switching to</span> fundedlake</motion.h2>
+        <motion.h2 className="text-center"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1.1 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.4 }}
+        >
+          <span className="text-white">
+            Why Traders are switching to
+          </span>{" "}
+          fundedlake
+        </motion.h2>
         <div className="comparision-box w-full mt-10 bg-yellow-300 mb-16 rounded-3xl shadow-2xl overflow-hidden border border-[#250b3a]">
           {/* Header */}
           <div className="grid grid-cols-3">

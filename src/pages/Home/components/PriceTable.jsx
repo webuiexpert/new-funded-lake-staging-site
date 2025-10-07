@@ -3,6 +3,8 @@ import "react-tabs/style/react-tabs.css";
 import OneStepPriceCard from "./OneStepPriceCard";
 import TwoStepPriceCard from "./TwoStepPriceCard";
 import InstantPriceCard from "./InstantPriceCard";
+import PrimaryButton from "../../../Components/PrimaryButton";
+
 
 export default () => (
   <Tabs className="priceTab md:text-[14px] max-w-5xl mx-auto font-bold text-sm text-white">
@@ -59,13 +61,10 @@ export default () => (
               Our evaluation is based on best practices and International
               Standards, customized and refined to cater to every trading style.
             </p>
-            <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99"
-              target="_blank"
-              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
-            >
-              <button>GET FUNDED</button>
-            </a>
+            <div className="flex gap-6">
+              <PrimaryButton text="SIGNUP NOW" />
+              <PrimaryButton text="GET FUNDED" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
+            </div>
           </div>
         </TabPanel>
         <TabPanel className="10K">
@@ -75,13 +74,10 @@ export default () => (
               <span className="text-white">$75</span> for
               <span className="text-white"> 10K </span> Account
             </h2>
-            <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99"
-              target="_blank"
-              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
-            >
-              <button>GET FUNDED</button>
-            </a>
+            <div className="flex gap-6">
+              <PrimaryButton text="SIGNUP NOW" />
+              <PrimaryButton text="GET FUNDED" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
+            </div>
           </div>
         </TabPanel>
         <TabPanel className="25K">
@@ -91,13 +87,10 @@ export default () => (
               $190<span className="text-white"> for </span> 
               25K<span className="text-white"> Account </span> 
             </h2>
-            <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=100"
-              target="_blank"
-              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
-            >
-              <button>GET FUNDED</button>
-            </a>
+            <div className="flex gap-6">
+              <PrimaryButton text="SIGNUP NOW" />
+              <PrimaryButton text="GET FUNDED" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=100" />
+            </div>
           </div>
         </TabPanel>
         <TabPanel className="50K">
@@ -107,6 +100,7 @@ export default () => (
               $375<span className="text-white"> for </span> 
               50K<span className="text-white"> Account </span> 
             </h2>
+            
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=101"
               target="_blank"
