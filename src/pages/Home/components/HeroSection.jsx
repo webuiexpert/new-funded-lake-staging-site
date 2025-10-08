@@ -8,7 +8,8 @@ function HeroSection() {
   return (
     <div className="hero-section md:py-24 relative overflow-hidden">
       <div class="tg-bg-gradient d-block navy-bg-gradient"></div>
-      <div class="tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
+      <div class="navy-left-side-gradient d-block"></div>
+      <div class="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
       <div class="ripple-shape2">
         <span class="ripple-11"></span>
         <span class="ripple-12"></span>
@@ -22,18 +23,18 @@ function HeroSection() {
         alt=""
       />
       <img
-        className="absolute md:w-20 w-16 bottom-36 left-10 opacity-30"
+        className="upDownAnim absolute md:w-24 w-16 bottom-36 left-10 opacity-30"
         src={walletIcon}
         alt=""
       />
       <img
-        className="absolute md:w-20 w-16 bottom-36 right-10 opacity-30"
+        className="upDownAnim absolute md:w-24 w-16 bottom-36 right-10 opacity-30"
         src={lockerIcon}
         alt=""
       />
       <div className="text-center relative z-10">
         <motion.h1
-          className="text-white font-bold text-3xl sm:text-5xl md:text-6xl lg:text-[80px] leading-tight"
+          className="text-white font-bold text-2xl sm:text-4xl md:text-6xl lg:text-[80px] leading-tight"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1.1 }}
           transition={{ duration: 1, ease: "easeInOut" }}

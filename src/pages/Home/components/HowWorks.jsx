@@ -39,6 +39,7 @@ function HowWorks() {
 
   return (
     <div className="text-white py-24 relative">
+      <div class="navy-left-side-gradient d-block"></div>
       <img className="saperator absolute top-0 left-0 w-full" src={topSep} alt="" />
       <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
       <motion.h2 className="text-center mt-2"

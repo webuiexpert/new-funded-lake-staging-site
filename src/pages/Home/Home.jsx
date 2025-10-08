@@ -15,7 +15,7 @@ import TrustPilotMarquee from './components/TrustPilotMarquee'
 
 function Home() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <HeroSection />
       <ChooseUs />
       <HowWorks />

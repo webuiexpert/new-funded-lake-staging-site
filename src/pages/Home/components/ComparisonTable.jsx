@@ -1,6 +1,8 @@
 import React from "react";
 import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
+import dollarCubeIcon from "/assets/bicon-icons-bg-left.png"
+import coineCubeIcon from "/assets/bicon-icons-bg-right.png"
 import { motion } from "framer-motion";
 
 function ComparisonTable() {
@@ -34,6 +36,11 @@ function ComparisonTable() {
 
   return (
     <div className="flex items-center justify-center relative py-24">
+      <div class="navy-left-side-gradient d-block"></div>
+      <div class="navy-right-side-gradient d-block"></div>
+       <img className="scale-plus-animation absolute left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
+       <img className="scale-plus-animation absolute right-20 w-56 -rotate-52 z-[1]" src={coineCubeIcon} alt="" />
+       <div class="navy-left-side-gradient d-block"></div>
       <img
         className="saperator absolute top-0 left-0 w-full"
         src={topSep}
