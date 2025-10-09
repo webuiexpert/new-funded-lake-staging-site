@@ -35,7 +35,7 @@ function ComparisonTable() {
   ];
 
   return (
-    <div className="flex items-center justify-center relative py-24">
+    <div className="flex items-center justify-center relative md:py-24 md:pt-0 pt-16 md:px-0 px-4">
       <div class="navy-left-side-gradient d-block"></div>
       <div class="navy-right-side-gradient d-block"></div>
        <img className="scale-plus-animation absolute left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
@@ -51,7 +51,7 @@ function ComparisonTable() {
         src={botSep}
         alt=""
       />
-      <div className="w-full max-w-6xl mt-16">
+      <div className="w-full max-w-6xl md:mt-16">
         <motion.h2 className="text-center"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1.1 }}

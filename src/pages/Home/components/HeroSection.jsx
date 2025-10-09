@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <div className="hero-section md:py-24 relative overflow-hidden">
+    <div className="hero-section md:py-24 md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
       <div class="tg-bg-gradient d-block navy-bg-gradient"></div>
       <div class="navy-left-side-gradient d-block"></div>
       <div class="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
@@ -32,9 +32,9 @@ function HeroSection() {
         src={lockerIcon}
         alt=""
       />
-      <div className="text-center relative z-10">
+      <div className="text-center relative z-10 md:mt-7">
         <motion.h1
-          className="text-white font-bold text-2xl sm:text-4xl md:text-6xl lg:text-[80px] leading-tight"
+          className="text-white font-bold text-xl  md:text-5xl lg:text-[80px] leading-tight"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1.1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -50,7 +50,7 @@ function HeroSection() {
           capital!”
         </p>
       </div>
-      <div className="my-10 text-center flex flex-col gap-10">
+      <div className="my-10 text-center flex flex-col lg:gap-8 md:gap-6 gap-5">
         <PrimaryButton
           text="Join our discord community"
           link="https://yourwebsite.com/about"

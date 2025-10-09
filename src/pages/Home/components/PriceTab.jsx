@@ -4,7 +4,7 @@ import {motion} from "framer-motion"
 
 function PriceTab() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-4 lg:px-0 lg:py-6">
+    <div className="w-full max-w-6xl mx-auto px-4 pt-10 md:pt-0 lg:px-0 lg:py-6">
       <div class="navy-side-gradient d-block"></div>
       <div className="flex flex-wrap w-full lg:mb-20 mb-10 flex-col items-center text-center">
         <motion.h2 className="md:leading-[1.1em] font-bold title-font mb-2 text-white"

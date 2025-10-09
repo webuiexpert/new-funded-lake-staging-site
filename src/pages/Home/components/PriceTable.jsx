@@ -7,8 +7,8 @@ import PrimaryButton from "../../../Components/PrimaryButton";
 
 
 export default () => (
-  <Tabs className="priceTab md:text-[14px] max-w-5xl mx-auto font-bold text-sm text-white">
-    <TabList className="priceTabUl overflow-hidden bg-[#000b1f]">
+  <Tabs className="priceTab md:text-[14px] md:max-w-5xl max-w-full mx-auto font-bold text-sm text-white">
+    <TabList className="priceTabUl overflow-hidden bg-[#000b1f] w-full">
       <Tab className="cursor-pointer md:px-6 md:py-3 px-4 bg-dark mx-0 hover:bg-black duration-200 hover:text-dark rounded-full">
         ONE STEP
       </Tab>
@@ -61,7 +61,7 @@ export default () => (
               Our evaluation is based on best practices and International
               Standards, customized and refined to cater to every trading style.
             </p>
-            <div className="flex gap-6">
+            <div className="flex md:flex-row flex-col md:gap-6 gap-4 mt-2">
               <PrimaryButton text="SIGNUP NOW" />
               <PrimaryButton text="GET FUNDED" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
             </div>

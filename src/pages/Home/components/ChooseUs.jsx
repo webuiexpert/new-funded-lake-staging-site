@@ -46,15 +46,15 @@ function ChooseUs() {
           viewport={{ once: true, amount: 0.4 }} // 
       >Why Choose Us</motion.h2>
       <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-5">
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-8 gap-12 text-center">
           {featuresData.map((item) => (
             <div
               key={item.id}
-              className="features-col flex flex-col items-center justify-start space-y-4"
+              className="features-col flex flex-col items-center justify-start space-y-4 pb-5"
             >
-              <div className="">
+              <div>
                 <img
-                  className="border-[var(--color-primary)] border-2 p-4 rounded-full mx-auto"
+                  className="border-[var(--color-primary)] border-2 p-4 md:w-auto w-20 rounded-full mx-auto"
                   src={item.fimg}
                   alt="feature-img"
                 />

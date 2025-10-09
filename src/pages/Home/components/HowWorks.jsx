@@ -38,7 +38,7 @@ function HowWorks() {
   ];
 
   return (
-    <div className="text-white py-24 relative">
+    <div className="text-white md:py-24 py-13 md:px-0 px-4 relative">
       <div class="navy-left-side-gradient d-block"></div>
       <img className="saperator absolute top-0 left-0 w-full" src={topSep} alt="" />
       <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
@@ -48,7 +48,7 @@ function HowWorks() {
           transition={{ duration: 1, ease: "easeInOut" }}
           viewport={{ once: true, amount: 0.4 }} // 
       >How it works</motion.h2>
-      <div className="works-box max-w-6xl mx-auto md:mt-10 md:mb-16 mt-5">
+      <div className="works-box max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10">
         <div className="grid grid-cols- md:grid-cols-3 gap-8 text-center">
           {workSteps.map((item) => (
             <div
@@ -57,14 +57,14 @@ function HowWorks() {
             >
               <div className="text-start space-y-6">
                 <img className="mr-auto w-20" src={item.steps} alt="" />
-                <h3 className="text-3xl text-start font-bold uppercase">
+                <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
                   {item.title}
                 </h3>
                 <ul className="space-y-4 text-start inline-block">
                   {item.points.map((point, i) => (
                     <li
                       key={i}
-                      className="flex justify-start items-start space-x-3 text-xl"
+                      className="flex justify-start items-start space-x-3 md:text-xl text-md"
                     >
                       <span className="text-cyan-400 ">✔</span>
                       <span className="font-bold text-gray-200">{point}</span>
@@ -73,10 +73,10 @@ function HowWorks() {
                 </ul>
               </div>
               <div className="text-center w-full">
-                <img className="md:w-38 mx-auto" src={item.stepIcon} alt="" />
+                <img className="md:w-38 w-32 mx-auto" src={item.stepIcon} alt="" />
                 <h4 className="text-center my-5 w-full">{item.subTitle}</h4>
               </div>
-              <img   className={`w-16 absolute -right-6 bottom-28 ${item.subTitle === "PAYOUT" ? "hidden" : "block"}`} src={arrowIcon} alt="" />
+              <img   className={`md:w-16 w-12 absolute -md:right-6 md:bottom-28 -bottom-5 rotate-[90deg] right-5 ${item.subTitle === "PAYOUT" ? "hidden" : "block"}`} src={arrowIcon} alt="" />
             </div>
           ))}
         </div>

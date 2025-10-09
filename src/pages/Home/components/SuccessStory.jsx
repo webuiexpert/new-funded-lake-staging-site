@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 function SuccessStory() {
   return (
-    <div className="md:py-16 md:px-0 px-4 py-10 relative">
+    <div className="md:py-16 md:px-0 px-6 py-10 relative">
       <img className="saperator absolute top-0 left-0 w-full" src={botSep} alt="" />
       <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
       <img className="scale-plus-animation absolute top-24 left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
