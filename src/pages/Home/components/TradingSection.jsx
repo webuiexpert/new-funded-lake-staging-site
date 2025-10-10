@@ -35,7 +35,7 @@ function TradingSection() {
   return (
     <div className="relative pt-10 pb-20">
       <img
-        className="upDownAnim absolute md:w-24 w-16 bottom-10 opacity-30"
+        className="upDownAnim absolute md:w-36 w-16 bottom-10 opacity-60"
         src={walletIcon}
         alt=""
       />

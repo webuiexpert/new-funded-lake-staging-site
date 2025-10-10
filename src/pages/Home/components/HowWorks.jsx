@@ -7,79 +7,149 @@ import stepsIcon1 from "/assets/evaluation-phase-1.png";
 import stepsIcon2 from "/assets/funded-phase-2.png";
 import stepsIcon3 from "/assets/payout-icon.png";
 import arrowIcon from "/assets/blue-right-arrow.png";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 60 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
 
 function HowWorks() {
-  const workSteps = [
-    {
-      id: 1,
-      steps: stepsImg1,
-      title: "Choose Your Program",
-      points: ["REACH PROFIT TARGET", "DO NOT VIOLATE MAX & DAILY DRAWDOWN"],
-      stepIcon: stepsIcon1,
-      subTitle: "EVALUATION PHASE",
-    },
-    {
-      id: 2,
-      steps: stepsImg2,
-      title: "Earn as a Funded Trader",
-      points: ["$109.200"],
-      stepIcon: stepsIcon2,
-      subTitle: "FUNDED PHASE",
-    },
-    {
-      id: 3,
-      steps: stepsImg3,
-      title: "Receive Your Payout",
-      points: ["Withdraw as soon as you get funded", "First payout is instant"],
-      stepIcon: stepsIcon3,
-      subTitle: "PAYOUT",
-    },
-  ];
-
   return (
     <div className="text-white md:py-24 py-13 md:px-0 px-4 relative">
-      <div class="navy-left-side-gradient d-block"></div>
-      <img className="saperator absolute top-0 left-0 w-full" src={topSep} alt="" />
-      <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
-      <motion.h2 className="text-center mt-2"
-      initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1.1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          viewport={{ once: true, amount: 0.4 }} // 
-      >How it works</motion.h2>
+      <div className="navy-left-side-gradient d-block"></div>
+      <div className="navy-right-side-gradient d-block"></div>
+
+      <img
+        className="saperator absolute top-0 left-0 w-full"
+        src={topSep}
+        alt=""
+      />
+      <img
+        className="saperator absolute bottom-0 left-0 w-full"
+        src={botSep}
+        alt=""
+      />
+
+      <motion.h2
+        className="text-center mt-2"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1.1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.4 }}
+      >
+        How it works
+      </motion.h2>
+
       <div className="works-box max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10">
-        <div className="grid grid-cols- md:grid-cols-3 gap-8 text-center">
-          {workSteps.map((item) => (
-            <div
-              key={item.id}
-              className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6 min-h-[320px] rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
-            >
-              <div className="text-start space-y-6">
-                <img className="mr-auto w-20" src={item.steps} alt="" />
-                <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
-                  {item.title}
-                </h3>
-                <ul className="space-y-4 text-start inline-block">
-                  {item.points.map((point, i) => (
-                    <li
-                      key={i}
-                      className="flex justify-start items-start space-x-3 md:text-xl text-md"
-                    >
-                      <span className="text-cyan-400 ">✔</span>
-                      <span className="font-bold text-gray-200">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="text-center w-full">
-                <img className="md:w-38 w-32 mx-auto" src={item.stepIcon} alt="" />
-                <h4 className="text-center my-5 w-full">{item.subTitle}</h4>
-              </div>
-              <img   className={`md:w-16 w-12 absolute -md:right-6 md:bottom-28 -bottom-5 rotate-[90deg] right-5 ${item.subTitle === "PAYOUT" ? "hidden" : "block"}`} src={arrowIcon} alt="" />
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          className="grid md:grid-cols-3 gap-8 text-center"
+        >
+          <motion.div
+            variants={item}
+            className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6 min-h-[320px] rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
+          >
+            <div className="text-start space-y-6">
+              <img className="mr-auto w-20" src={stepsImg1} alt="" />
+              <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
+                Choose Your Program
+              </h3>
+              <ul className="space-y-4 text-start inline-block">
+                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                  <span className="text-cyan-400 ">✔</span>
+                  <span className="font-bold text-gray-200">
+                    REACH PROFIT TARGET
+                  </span>
+                </li>
+                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                  <span className="text-cyan-400 ">✔</span>
+                  <span className="font-bold text-gray-200">
+                    DO NOT VIOLATE MAX & DAILY DRAWDOWN
+                  </span>
+                </li>
+              </ul>
             </div>
-          ))}
-        </div>
+            <div className="text-center w-full">
+              <img className="md:w-38 w-32 mx-auto" src={stepsIcon1} alt="" />
+              <h4 className="text-center my-5 w-full">EVALUATION PHASE</h4>
+            </div>
+            <img
+              className="md:w-16 w-12 absolute -md:right-6 md:bottom-28 -bottom-5 md:rotate-[0deg] rotate-[90deg] -right-5"
+              src={arrowIcon}
+              alt=""
+            />
+          </motion.div>
+
+          <motion.div
+            variants={item}
+            className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6 min-h-[320px] rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
+          >
+            <div className="text-start space-y-6">
+              <img className="mr-auto w-20" src={stepsImg2} alt="" />
+              <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
+                Earn as a Funded Trader
+              </h3>
+              <ul className="space-y-4 text-start inline-block">
+                <li className="flex justify-start items-start space-x-3 md:text-5xl text-2xl">
+                  <span className="text-cyan-400 ">✔</span>
+                  <span className="font-bold text-gray-200">$109.200</span>
+                </li>
+              </ul>
+            </div>
+            <div className="text-center w-full">
+              <img className="md:w-38 w-32 mx-auto" src={stepsIcon2} alt="" />
+              <h4 className="text-center my-5 w-full">FUNDED PHASE</h4>
+            </div>
+            <img
+              className="md:w-16 w-12 absolute -md:right-6 md:bottom-28 -bottom-5 md:rotate-[0deg] rotate-[90deg] -right-5"
+              src={arrowIcon}
+              alt=""
+            />
+          </motion.div>
+
+          <motion.div
+            variants={item}
+            className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6 min-h-[320px] rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
+          >
+            <div className="text-start space-y-6">
+              <img className="mr-auto w-20" src={stepsImg3} alt="" />
+              <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
+                Receive Your Payout
+              </h3>
+              <ul className="space-y-4 text-start inline-block">
+                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                  <span className="text-cyan-400 ">✔</span>
+                  <span className="font-bold text-gray-200">
+                    Withdraw as soon as you get funded
+                  </span>
+                </li>
+                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                  <span className="text-cyan-400 ">✔</span>
+                  <span className="font-bold text-gray-200">
+                    First payout is instant
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div className="text-center w-full">
+              <img className="md:w-38 w-32 mx-auto" src={stepsIcon3} alt="" />
+              <h4 className="text-center my-5 w-full">PAYOUT</h4>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

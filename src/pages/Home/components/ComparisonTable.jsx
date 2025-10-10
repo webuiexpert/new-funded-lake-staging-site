@@ -35,7 +35,7 @@ function ComparisonTable() {
   ];
 
   return (
-    <div className="flex items-center justify-center relative md:py-24 md:pt-0 pt-16 md:px-0 px-4">
+    <div className="flex items-center justify-center relative md:py-24 md:pt-24 pt-16 md:px-0 px-4">
       <div class="navy-left-side-gradient d-block"></div>
       <div class="navy-right-side-gradient d-block"></div>
        <img className="scale-plus-animation absolute left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />

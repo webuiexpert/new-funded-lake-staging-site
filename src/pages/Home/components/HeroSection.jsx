@@ -3,32 +3,30 @@ import botSep from "/assets/bot-saprator.jpg";
 import walletIcon from "/assets/shape_wallet.png";
 import lockerIcon from "/assets/shape_locker.png";
 import { motion } from "framer-motion";
+import ScrollDownIndicator from "../../../Components/ScrollDownIndicator";
 
 function HeroSection() {
   return (
-    <div className="hero-section md:py-24 md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
-      <div class="tg-bg-gradient d-block navy-bg-gradient"></div>
-      <div class="navy-left-side-gradient d-block"></div>
-      <div class="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
-      <div class="ripple-shape2">
-        <span class="ripple-11"></span>
-        <span class="ripple-12"></span>
-        <span class="ripple-13"></span>
-        <span class="ripple-14"></span>
-        <span class="ripple-15"></span>
+    <div className="hero-section md:py-24 h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
+      <div className="tg-bg-gradient d-block navy-bg-gradient"></div>
+      <div className="navy-left-side-gradient d-block"></div>
+      <div className="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
+      <div className="ripple-shape2">
+        <span className="ripple-11"></span>
+        <span className="ripple-12"></span>
+        <span className="ripple-13"></span>
+        <span className="ripple-14"></span>
+        <span className="ripple-15"></span>
       </div>
-      <img
-        className="saperator absolute bottom-0 left-0 w-full"
+      <img className="saperator absolute bottom-0 left-0 w-full"
         src={botSep}
         alt=""
       />
-      <img
-        className="upDownAnim absolute md:w-24 w-16 bottom-36 left-10 opacity-30"
+      <img className="upDownAnim absolute md:w-36 w-16 bottom-36 left-10 opacity-60"
         src={walletIcon}
         alt=""
       />
-      <img
-        className="upDownAnim absolute md:w-24 w-16 bottom-36 right-10 opacity-30"
+      <img className="upDownAnim absolute md:w-36 w-16 bottom-36 right-10 opacity-60"
         src={lockerIcon}
         alt=""
       />
@@ -56,6 +54,9 @@ function HeroSection() {
           link="https://yourwebsite.com/about"
         />
         <PrimaryButton text="Signup now" link="https://yourwebsite.com/about" />
+      </div>
+      <div>
+        <ScrollDownIndicator />
       </div>
     </div>
   );

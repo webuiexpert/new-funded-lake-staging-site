@@ -37,8 +37,22 @@ function ChooseUs() {
     },
   ];
 
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const item1 = {
+    hidden: { opacity: 0, y: 60 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.10, ease: "easeOut" } },
+  };
+
   return (
-    <section className="text-white pt-2 pb-10 px-6 relative">
+    <section id="why-choose-us" className="text-white pt-2 pb-10 px-6 relative">
       <motion.h2 className="text-center"
       initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1.1 }}
@@ -46,11 +60,14 @@ function ChooseUs() {
           viewport={{ once: true, amount: 0.4 }} // 
       >Why Choose Us</motion.h2>
       <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-5">
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-8 gap-12 text-center">
+        <motion.div
+        variants={container}
+        className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-8 gap-12 text-center">
           {featuresData.map((item) => (
-            <div
-              key={item.id}
-              className="features-col flex flex-col items-center justify-start space-y-4 pb-5"
+            <motion.div
+             variants={item1}
+             key={item.id}
+             className="features-col flex flex-col items-center justify-start space-y-4 pb-5"
             >
               <div>
                 <img
@@ -63,9 +80,9 @@ function ChooseUs() {
                 {item.title}
               </h3>
               <p className="text-gray-400 text-sm max-w-[220px]">{item.desc}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

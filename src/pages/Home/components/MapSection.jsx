@@ -16,7 +16,7 @@ const MapSection = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="relative w-full md:max-w-[600px] mx-auto"
+        className="scale-up relative w-full md:max-w-[600px] mx-auto"
       >
         <img src={globeImg} alt="Globe" className="w-full" />
 

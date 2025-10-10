@@ -43,6 +43,7 @@ body {
   font-family: var(--font-primary);
   background-color: var(--color-light);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -460,6 +461,25 @@ h4 {
 }  
 }
 
+.scale-up {
+  animation-name: scale-up-pulse;
+  animation-duration:20s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes scale-up-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .btn-shadow{
     left: 0;
     right: 0;
@@ -495,6 +515,51 @@ h4 {
 .ico_creative_btn:hover .btn-side-dot{
   border-color: #dddbdb;
 }
+
+.spin_image {
+animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+
+100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
+}
+
+
+.scroll_down .scroll-icon
+ {
+    display: block;
+    margin: -5px 0;
+    line-height: 1;
+    color: var(--bs-light);
+    -webkit-animation: animationScrollDown 2s infinite;
+    animation: animationScrollDown 2s infinite;
+}
+@keyframes animationScrollDown {
+  
+0% {
+    opacity: 0;
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+50% {
+    opacity: 1;
+}
+
+100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+}
+}
+
 
 
 /* -----------media screen-------- */
