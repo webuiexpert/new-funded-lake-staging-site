@@ -1,5 +1,4 @@
 import PrimaryButton from "../../../Components/PrimaryButton";
-import botSep from "/assets/bot-saprator.jpg";
 import walletIcon from "/assets/shape_wallet.png";
 import lockerIcon from "/assets/shape_locker.png";
 import { motion } from "framer-motion";
@@ -7,7 +6,7 @@ import ScrollDownIndicator from "../../../Components/ScrollDownIndicator";
 
 function HeroSection() {
   return (
-    <div className="hero-section md:py-24 h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
+    <div className="hero-section md:py-24 py-16 lg:h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
       <div className="tg-bg-gradient d-block navy-bg-gradient"></div>
       <div className="navy-left-side-gradient d-block"></div>
       <div className="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
@@ -18,15 +17,12 @@ function HeroSection() {
         <span className="ripple-14"></span>
         <span className="ripple-15"></span>
       </div>
-      <img className="saperator absolute bottom-0 left-0 w-full"
-        src={botSep}
-        alt=""
-      />
-      <img className="upDownAnim absolute md:w-36 w-16 bottom-36 left-10 opacity-60"
+    
+      <img className="upDownAnim absolute md:w-36 w-16 md:bottom-36 bottom-10 md:left-10 left-5 opacity-60"
         src={walletIcon}
         alt=""
       />
-      <img className="upDownAnim absolute md:w-36 w-16 bottom-36 right-10 opacity-60"
+      <img className="upDownAnim absolute md:w-36 w-16 md:bottom-36 bottom-16  md:right-10 right-5 opacity-60"
         src={lockerIcon}
         alt=""
       />

@@ -22,7 +22,7 @@ const item = {
 
 function TraderWorld() {
   return (
-    <div className="trade-world-section font-lexend bg-blackish text-white relative overflow-hidden">
+    <div className="trade-world-section font-lexend bg-blackish text-white md:py-5 relative overflow-hidden">
       {/* Background Icons */}
       <img
         className="absolute top-20 left-10 w-60 rotate-[28deg] opacity-30"

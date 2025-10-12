@@ -5,10 +5,10 @@ function PrimaryButton({ text, link }) {
   return (
     <NavLink to={link} target="_blank" rel="noopener noreferrer">
       <div className="w-fit mx-auto relative transition-all duration-700">        
-        <span className="ico_creative_btn relative inline-flex items-center overflow-hidden justify-center lg:px-10 md:px-7  lg:py-5  md:py-3 py-4 px-3 rounded-md border border-[#011667] bg-[linear-gradient(180deg,#0d001f_0%,#12022d_100%)] text-[#fff] font-semibold transition-all duration-500 hover:border-[#011667] hover:text-[#fff] group">
+        <span className="ico_creative_btn relative inline-flex items-center overflow-hidden justify-center lg:px-10 md:px-7 lg:py-5  md:py-3 py-3 px-3 rounded-lg border-2  hover:border-[#011667] border-[#011667] text-[#fff] font-semibold group">
           {/* Left Arrows */}
           <span className="relative flex items-center justify-center mr-6">
-            <small className="btn-side-dot absolute top-[-10px] left-[-30px] w-2 h-2 bg-transparent border border-[#011667] rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></small>
+            <small className="btn-side-dot absolute top-[-10px] left-[-30px] w-2 h-2 bg-transparent border border-[#011667] rounded-full  opacity-70 group-hover:opacity-100 transition-all duration-300"></small>
             <small className="btn-side-dot absolute bottom-[-10px] left-[-30px] w-2 h-2 border border-[#011667] rounded-full opacity-70 group-hover:opacity-100 transition-all duration-300"></small>
             <svg
               className="w-5 h-5 fill-[#011667] group-hover:fill-[#fff] group-hover:scale-[1.1] transition-all duration-300"
@@ -22,7 +22,7 @@ function PrimaryButton({ text, link }) {
           </span>
 
           {/* Text */}
-          <span className="md:text-xl relative z-20 text-md font-bold tracking-wide">
+          <span className="md:text-[18px] text-[16px0] capitalize relative z-20 text-md font-semibold tracking-wide">
             {text}
           </span>
 

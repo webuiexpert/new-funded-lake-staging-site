@@ -50,31 +50,31 @@ function HowWorks() {
         How it works
       </motion.h2>
 
-      <div className="works-box max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10">
+      <div className="works-box max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10 lg:px-0 px-5">
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="grid md:grid-cols-3 gap-8 text-center"
+          className="grid md:grid-cols-3 lg:gap-8 md:gap-4 gap-y-8 text-center"
         >
           <motion.div
             variants={item}
-            className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6 min-h-[320px] rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
+            className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6  rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
           >
             <div className="text-start space-y-6">
-              <img className="mr-auto w-20" src={stepsImg1} alt="" />
-              <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
+              <img className="mr-auto lg:w-20 md:w-16 w-12" src={stepsImg1} alt="" />
+              <h3 className="lg:text-3xl md:text-xl text-start font-bold uppercase">
                 Choose Your Program
               </h3>
               <ul className="space-y-4 text-start inline-block">
-                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
                   <span className="text-cyan-400 ">✔</span>
                   <span className="font-bold text-gray-200">
                     REACH PROFIT TARGET
                   </span>
                 </li>
-                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
                   <span className="text-cyan-400 ">✔</span>
                   <span className="font-bold text-gray-200">
                     DO NOT VIOLATE MAX & DAILY DRAWDOWN
@@ -83,11 +83,11 @@ function HowWorks() {
               </ul>
             </div>
             <div className="text-center w-full">
-              <img className="md:w-38 w-32 mx-auto" src={stepsIcon1} alt="" />
+              <img className="lg:w-38 md:w-24 w-32 mx-auto" src={stepsIcon1} alt="" />
               <h4 className="text-center my-5 w-full">EVALUATION PHASE</h4>
             </div>
             <img
-              className="md:w-16 w-12 absolute -md:right-6 md:bottom-28 -bottom-5 md:rotate-[0deg] rotate-[90deg] -right-5"
+              className="lg:w-16 w-16 absolute -lg:right-6 md:right- md:bottom-28 -bottom-5 md:rotate-[0deg] rotate-[90deg] right-10"
               src={arrowIcon}
               alt=""
             />
@@ -98,23 +98,23 @@ function HowWorks() {
             className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6 min-h-[320px] rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
           >
             <div className="text-start space-y-6">
-              <img className="mr-auto w-20" src={stepsImg2} alt="" />
-              <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
+              <img className="mr-auto lg:w-20 md:w-16 w-12" src={stepsImg2} alt="" />
+              <h3 className="lg:text-3xl md:text-xl text-2xl text-start font-bold uppercase">
                 Earn as a Funded Trader
               </h3>
               <ul className="space-y-4 text-start inline-block">
-                <li className="flex justify-start items-start space-x-3 md:text-5xl text-2xl">
+                <li className="flex justify-start items-start space-x-3 lg:text-5xl md:text-3xl text-2xl">
                   <span className="text-cyan-400 ">✔</span>
                   <span className="font-bold text-gray-200">$109.200</span>
                 </li>
               </ul>
             </div>
             <div className="text-center w-full">
-              <img className="md:w-38 w-32 mx-auto" src={stepsIcon2} alt="" />
+              <img className="lg:w-38 md:w-24 w-32 mx-auto" src={stepsIcon2} alt="" />
               <h4 className="text-center my-5 w-full">FUNDED PHASE</h4>
             </div>
             <img
-              className="md:w-16 w-12 absolute -md:right-6 md:bottom-28 -bottom-5 md:rotate-[0deg] rotate-[90deg] -right-5"
+              className="lg:w-16 w-16 absolute -lg:right-6 md:right- md:bottom-28 -bottom-5 md:rotate-[0deg] rotate-[90deg] right-10"
               src={arrowIcon}
               alt=""
             />
@@ -125,18 +125,18 @@ function HowWorks() {
             className="works-col flex flex-col items-start justify-between space-y-4 gap-y-4 bg-[#0f1021] px-6 pb-6 min-h-[320px] rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
           >
             <div className="text-start space-y-6">
-              <img className="mr-auto w-20" src={stepsImg3} alt="" />
-              <h3 className="md:text-3xl text-2xl text-start font-bold uppercase">
+              <img className="mr-auto lg:w-20 md:w-16 w-12" src={stepsImg3} alt="" />
+              <h3 className="lg:text-3xl md:text-xl text-2xl text-start font-bold uppercase">
                 Receive Your Payout
               </h3>
               <ul className="space-y-4 text-start inline-block">
-                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
                   <span className="text-cyan-400 ">✔</span>
                   <span className="font-bold text-gray-200">
                     Withdraw as soon as you get funded
                   </span>
                 </li>
-                <li className="flex justify-start items-start space-x-3 md:text-xl text-md">
+                <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
                   <span className="text-cyan-400 ">✔</span>
                   <span className="font-bold text-gray-200">
                     First payout is instant
@@ -145,7 +145,7 @@ function HowWorks() {
               </ul>
             </div>
             <div className="text-center w-full">
-              <img className="md:w-38 w-32 mx-auto" src={stepsIcon3} alt="" />
+              <img className="lg:w-38 md:w-24 w-32 mx-auto" src={stepsIcon3} alt="" />
               <h4 className="text-center my-5 w-full">PAYOUT</h4>
             </div>
           </motion.div>

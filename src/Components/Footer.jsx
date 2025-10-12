@@ -17,7 +17,7 @@ function Footer() {
             >
               <img className="w-100" src={logo} alt="logo" />
             </NavLink>
-            <ul className="social-icons flex justify-center items-center gap-2 my-4">
+            <ul className="social-icons duration-500 flex justify-center items-center gap-2 my-4">
             
               <a
                 href="https://www.facebook.com/profile.php?id=61575089499789"

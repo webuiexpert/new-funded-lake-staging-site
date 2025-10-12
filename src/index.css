@@ -34,9 +34,6 @@
 
   --animate-marquee: marquee 40s linear infinite;
 }
-/* .works-box ul:nth-child(2){
-  font-size: 3rem;
-} */
 
 html,
 body {
@@ -52,7 +49,7 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.3;
   color: var(--color-primary);
@@ -65,12 +62,7 @@ h4 {
   color: var(--color-primary);
   text-transform: uppercase;
 }
-/* .hero-section{
-  background-image: url('../public/assets/universe-img.png');
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 36%;
-} */
+
 .choose-box {
   box-shadow: 0px 0px 21px 5px #010b45;
 }
@@ -176,23 +168,30 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.stats-col:after {
+.bg-eff-col::after {
+  right: -1px;
+  top: 50%;
+  width: 15px;
   content: "";
+  height: 55%;
   position: absolute;
-  width: 20px;
-  height: 140px;
-  background: var(--accent-color);
-  right: -10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #070710;
   z-index: 11;
 }
-.stats-col:before {
+
+.bg-eff-col::before {
+  left: -1px;
+  top: 50%;
+  width: 15px;
   content: "";
+  height: 55%;
   position: absolute;
-  width: 20px;
-  height: 140px;
-  background: var(--accent-color);
-  left: -10px;
-  z-index: 11;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #070710;
+  z-index: 111;
 }
 .trade-col {
   background-image: url("../public/assets/blue-bg-light.png");
@@ -200,25 +199,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.certImg:before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 140px;
-  background: var(--accent-color);
-  left: -10px;
-  z-index: 1111;
-}
-.certImg:after {
-  content: "sass";
-  position: absolute;
-  width: 20px;
-  height: 140px;
-  background: var(--accent-color);
-  right: 0;
-  z-index: 111;
-  border: 1px solid white;
-}
+
 .traders-world-col {
   background-image: url("../public/assets/blue-bg-light.png");
   background-position: center;
@@ -258,21 +239,17 @@ h4 {
 .emailInput::placeholder {
   color: #000;
 }
-.stats-col {
+.bg-eff-col {
   transition: all ease 0.5s;
 }
-.stats-col:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgb(0, 196, 245, 0.993) 0px 2px 4px -1px;
-  transition: all ease 1s;
-}
+
 .shape_circle_1 {
   top: 20%;
   left: 0;
 }
 
 .scale-plus-animation {
-  animation: scalePulse 6s ease-in-out infinite; /* 👈 Add animation */
+  animation: scalePulse 6s ease-in-out infinite;
 }
 .shape_circle {
   opacity: 2.4;
@@ -359,7 +336,7 @@ h4 {
   transform: skewX(220deg);
   position: relative;
   z-index: 0;
-   top: 0;
+  top: 0;
   right: 0;
   opacity: 0.3;
 }
@@ -369,7 +346,7 @@ h4 {
   height: 700px;
   position: absolute;
   right: 40px;
-    top: 10%;
+  top: 10%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: 1px solid var(--color-accent);
@@ -383,7 +360,7 @@ h4 {
   height: 700px;
   position: absolute;
   right: 40px;
-    top: 10%;
+  top: 10%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: 1px solid var(--color-accent);
@@ -392,7 +369,7 @@ h4 {
   opacity: 1;
   transition: 0.4s;
 }
- .ripple-13{
+.ripple-13 {
   width: 700px;
   height: 700px;
   position: absolute;
@@ -436,35 +413,41 @@ h4 {
 }
 
 .hero-gradient-ball {
-     background: radial-gradient(114.99% 94.16% at 72.92% 82.18%, #111111 47.39%, #091534 68.23%, #00c4f4 86.63%);
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    position: absolute;
-    right: 40px;
-    bottom: 5%;
-    z-index: 1;
-    opacity: 0.3;
+  background: radial-gradient(
+    114.99% 94.16% at 72.92% 82.18%,
+    #111111 47.39%,
+    #091534 68.23%,
+    #00c4f4 86.63%
+  );
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  right: 40px;
+  bottom: 5%;
+  z-index: 1;
+  opacity: 0.3;
 }
 
-.upDownAnim{
+.upDownAnim {
   animation: upDownMover 3.5s ease-in-out infinite;
 }
 @keyframes upDownMover {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-}
-50% {
+  }
+  50% {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
-}  
+  }
 }
 
 .scale-up {
   animation-name: scale-up-pulse;
-  animation-duration:20s; 
-  animation-iteration-count: infinite; 
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
@@ -480,87 +463,100 @@ h4 {
   }
 }
 
-.btn-shadow{
-    left: 0;
-    right: 0;
-    top: 100%;
-    height: 100%;
-    content: "";
-    z-index: 1;
-    opacity: 0.3;
-    position: absolute;
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    border-radius: 50%;
-    -webkit-transition:all ease 400ms;
-    transition: all ease 400ms;
-    background-image: radial-gradient(#00c4f4, #a256ff, transparent);
+.ico_creative_btn .btn-shadow {
+  left: 0;
+  right: 0;
+  top: 20%;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  opacity: 0.4;
+  position: absolute;
+  -webkit-filter: blur(12px);
+  filter: blur(23px);
+  border-radius: 50%;
+  -webkit-transition: all ease 4s;
+  transition: all ease 4s;
+  background-image: radial-gradient(#00c4f4, #a256ff, transparent);
 }
-.ico_creative_btn:hover .btn-shadow{
-    left: 0;
-    right: 0;
-    top: 20%;
-    height: 100%;
-    content: "";
-    z-index: 1;
-    opacity: 0.3;
-    position: absolute;
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    border-radius: 50%;
-    -webkit-transition: all ease 400ms;
-    transition: all ease 400ms;
-    background-image: radial-gradient(#00c4f4, #a256ff, transparent);
+.ico_creative_btn:hover .btn-shadow {
+  background-image: var(--accent-color);
+  transition: all ease 4s;
 }
-.ico_creative_btn:hover .btn-side-dot{
+.ico_creative_btn:hover .btn-side-dot {
   border-color: #dddbdb;
 }
 
 .spin_image {
-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
-}
+  }
 
-100% {
+  100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
-}
+  }
 }
 
-
-.scroll_down .scroll-icon
- {
-    display: block;
-    margin: -5px 0;
-    line-height: 1;
-    color: var(--bs-light);
-    -webkit-animation: animationScrollDown 2s infinite;
-    animation: animationScrollDown 2s infinite;
+.scroll_down .scroll-icon {
+  display: block;
+  margin: -5px 0;
+  line-height: 1;
+  color: #fff;
+  -webkit-animation: animationScrollDown 2s infinite;
+  animation: animationScrollDown 2s infinite;
 }
 @keyframes animationScrollDown {
-  
-0% {
+  0% {
     opacity: 0;
     -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
-}
-50% {
+  }
+  50% {
     opacity: 1;
-}
+  }
 
-100% {
+  100% {
     opacity: 0;
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
-}
+  }
 }
 
-
+.ico_btn_outline:before {
+  inset: 1px;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  border-radius: 6px;
+  -webkit-transition: var(--bs-transition);
+  transition: var(--bs-transition);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(var(--bs-secondary-rgb), 0.96)),
+    color-stop(24%, var(--bs-dark))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(var(--bs-secondary-rgb), 0.96) 0%,
+    var(--bs-dark) 24%
+  );
+}
+.social-icons a:hover {
+  color: var(--bs-white);
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 6px 20px 0 rgb(67, 43, 255);
+  box-shadow: 0 6px 20px 0 rgba(67, 43, 255, 0.3);
+  transition: all ease 0.2s;
+}
 
 /* -----------media screen-------- */
 
@@ -592,34 +588,47 @@ animation: spin 10s linear infinite;
     color: var(--color-primary);
     text-transform: uppercase;
   }
+  .hero-gradient-ball {
+    opacity: 0.3;
+    top: 8%;
+    width: 200px;
+    height: 200px;
+    right: -25%;
+  }
+  .InnerPriceTab .react-tabs__tab-list {
+    justify-content: start;
+    border-radius: 12px;
+  }
+  .InnerPriceTab .react-tabs__tab-list li {
+    border: 1px solid white;
+  }
 }
 
 @media (max-width: 991px) {
   .priceTabUl {
-  width: 100%;
-}
+    width: 100%;
+  }
   h1 {
     font-size: 1.375rem;
     font-weight: 900;
     text-transform: uppercase;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.3;
     color: var(--color-primary);
     text-transform: uppercase;
+    text-wrap-mode: wrap;
   }
   .navy-left-side-gradient {
-  width: 320px;
-  height: 320px;
-}
-.choose-box .features-col::before
- {
+    width: 320px;
+    height: 320px;
+  }
+  .choose-box .features-col::before {
     width: 100%;
     height: 2px;
     bottom: -10px;
     margin-top: 20px;
- }
+  }
 }
-

@@ -17,18 +17,18 @@ export default function ScrollDownIndicator() {
   };
 
   return (
-    <a href="#why-choose-us" className=" flex flex-col items-center justify-center size-24 mx-auto -mt-4 relative cursor-pointer">
+    <a href="#why-choose-us" className=" flex flex-col items-center justify-center md:size-24 size-16 mx-auto -mt-4 relative cursor-pointer">
       <img
-        className="spin_image opacity-10 absolute w-full"
+        className="spin_image opacity-20 absolute w-full"
         src={zigZagImg}
         alt=""
       />
       <motion.div
         className="flex flex-col justify-center space-y-0 gap-0 items-center relative scroll_down"
       >
-          <ChevronDown className="scroll-icon text-white opacity-80 mt-2" />
-          <ChevronDown className="scroll-icon text-white opacity-60 -mt-3" />
-          <ChevronDown className="scroll-icon text-white opacity-40 -mt-2" />
+          <ChevronDown className="scroll-icon text-white md:size-auto size-5 opacity-80 mt-2" />
+          <ChevronDown className="scroll-icon text-white md:size-auto size-5 opacity-60 -mt-3" />
+          <ChevronDown className="scroll-icon text-white md:size-auto size-5 opacity-40 -mt-2" />
       </motion.div>
     </a>
   );

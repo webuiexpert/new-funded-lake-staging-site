@@ -3,6 +3,7 @@ import featureImg1 from "/assets/why-choose-us-1.png";
 import featureImg2 from "/assets/why-choose-us-2.png";
 import featureImg3 from "/assets/why-choose-us-3.png";
 import featureImg4 from "/assets/why-choose-us-4.png";
+import botSep from "/assets/bot-saprator.jpg";
 import {motion} from "framer-motion"
 
 function ChooseUs() {
@@ -52,8 +53,12 @@ function ChooseUs() {
   };
 
   return (
-    <section id="why-choose-us" className="text-white pt-2 pb-10 px-6 relative">
-      <motion.h2 className="text-center"
+    <section id="why-choose-us" className="text-white pt-10 pb-10 px-6 relative">
+        <img className="saperator absolute top-0 left-0 w-full"
+              src={botSep}
+              alt=""
+            />
+      <motion.h2 className="text-center mt-12"
       initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1.1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -62,7 +67,7 @@ function ChooseUs() {
       <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-5">
         <motion.div
         variants={container}
-        className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-8 gap-12 text-center">
+        className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 md:gap-4 gap-12 text-center">
           {featuresData.map((item) => (
             <motion.div
              variants={item1}
@@ -71,12 +76,12 @@ function ChooseUs() {
             >
               <div>
                 <img
-                  className="border-[var(--color-primary)] border-2 p-4 md:w-auto w-20 rounded-full mx-auto"
+                  className="border-[var(--color-primary)] border-2 p-4 lg:w-auto md:w-16 w-20 rounded-full mx-auto"
                   src={item.fimg}
                   alt="feature-img"
                 />
               </div>
-              <h3 className="font-bold text-lg tracking-wide lg:w-37 leading-6">
+              <h3 className="font-bold lg:text-lg md:text-lg tracking-wide lg:w-37 leading-6">
                 {item.title}
               </h3>
               <p className="text-gray-400 text-sm max-w-[220px]">{item.desc}</p>

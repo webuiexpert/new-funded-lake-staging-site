@@ -52,13 +52,13 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-2">
           <a
             href="https://fundedlakedashboard.propaccount.com/en/sign-in"
-            className="bg-[var(--accent-color)] border rounded-full hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
+            className="ico_btn_outline  relative z-0 border-[var(--color-primary)] border rounded-md hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
           >
             DASHBOARD
           </a>
           <a
             href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
-            className="border rounded-full bg-[#032070] hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
+            className="border-[var(--color-primary)] border rounded-md bg-[#032070] hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
           >
             GET FUNDED
           </a>

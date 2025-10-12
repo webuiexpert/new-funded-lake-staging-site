@@ -17,7 +17,6 @@ import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
 import { motion } from "framer-motion";
 
-
 function TrustPilotMarquee() {
   const trustImages = [
     trustpilotimg1,
@@ -48,11 +47,12 @@ function TrustPilotMarquee() {
       </div>
 
       <div className="flex flex-wrap w-full md:mb-16 mb-8 flex-col items-center text-center">
-        <motion.h2 className="sm:text-[50px] text-2xl font-bold title-font mt-20 mb-2 text-white"
-        initial={{ opacity: 0, scale: 0.8 }}
+        <motion.h2
+          className="sm:text-[50px] text-2xl font-bold title-font mt-20 mb-2 text-white"
+          initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1.1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          viewport={{ once: true, amount: 0.4 }} 
+          viewport={{ once: true, amount: 0.4 }}
         >
           <span className="text-white">WATCH SOME OF OUR</span>
           <br />
@@ -63,12 +63,23 @@ function TrustPilotMarquee() {
       <div className="trustPilot-container relative overflow-hidden">
         <div className="trustPilot-marquee flex">
           {[...trustImages, ...trustImages].map((img, idx) => (
-            <img
+            <div
               key={idx}
-              src={img}
-              alt={`slide-${idx}`}
-              className="border-2 border-[#2f373d] p-5 w-[620px] object-contain mx-4 inline-block rounded-2xl shadow-md"
-            />
+              className="bg-eff-col border border-[#2f373d] rounded-2xl hover:bg-[linear-gradient(120deg,#944FEB_0%,#DB5D41_37%,#944FEB_100%)] duration-700 ease-linear mx-3 flex-shrink-0 w-[520px] h-[290px] p-[1px] flex items-center justify-center gap-x-5 group  relative"
+            >
+              <div className="flex relative items-center rounded-2xl justify-center w-[100%] bg-[#070710] p-10 h-[100%]">
+                <img
+                  key={idx}
+                  src={img}
+                  alt={`slide-${idx}`}
+                  className=" relative z-40 w-full h-full rounded-2xl inline-block shadow-md object-cover"
+                />
+                <span class="dot_1 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1] border top-3 left-3 rounded-full"></span>
+                <span class="dot_2 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1] border bottom-3 left-3 rounded-full"></span>
+                <span class="dot_3 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1] border top-3 right-3 rounded-full"></span>
+                <span class="dot_4 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1] border bottom-3 right-3 rounded-full"></span>
+              </div>
+            </div>
           ))}
         </div>
       </div>
