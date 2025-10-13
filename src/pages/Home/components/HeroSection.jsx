@@ -9,7 +9,7 @@ function HeroSection() {
     <div className="hero-section md:py-24 py-16 lg:h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
       <div className="tg-bg-gradient d-block navy-bg-gradient"></div>
       <div className="navy-left-side-gradient d-block"></div>
-      <div className="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown"></div>
+      <div className="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown bg-[radial-gradient(114.99% 94.16% at 72.92% 82.18%,#111111 47.39%,#091534 68.23%,#00c4f4 86.63%)]"></div>
       <div className="ripple-shape2">
         <span className="ripple-11"></span>
         <span className="ripple-12"></span>
@@ -18,11 +18,11 @@ function HeroSection() {
         <span className="ripple-15"></span>
       </div>
     
-      <img className="upDownAnim absolute md:w-36 w-16 md:bottom-36 bottom-10 md:left-10 left-5 opacity-60"
+      <img className="upDownAnim absolute md:w-28 w-16 md:bottom-36 bottom-10 md:left-10 left-5 opacity-60"
         src={walletIcon}
         alt=""
       />
-      <img className="upDownAnim absolute md:w-36 w-16 md:bottom-36 bottom-16  md:right-10 right-5 opacity-60"
+      <img className="upDownAnim absolute md:w-28 w-16 md:bottom-36 bottom-16  md:right-10 right-5 opacity-60"
         src={lockerIcon}
         alt=""
       />
@@ -44,12 +44,12 @@ function HeroSection() {
           capital!”
         </p>
       </div>
-      <div className="my-10 text-center flex flex-col lg:gap-8 md:gap-6 gap-5">
+      <div className="my-10 text-center flex flex-col lg:gap-8 md:gap-6 gap-5 relative z-20">
         <PrimaryButton
           text="Join our discord community"
-          link="https://yourwebsite.com/about"
+          link="https://discord.gg/vDSnjmxndy"
         />
-        <PrimaryButton text="Signup now" link="https://yourwebsite.com/about" />
+        <PrimaryButton text="Signup now" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
       </div>
       <div>
         <ScrollDownIndicator />

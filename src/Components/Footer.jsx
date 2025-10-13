@@ -7,15 +7,15 @@ import checkIcon from "/assets/bullet-points.png";
 
 function Footer() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-3 md:py-3 lg:px-0 lg:py-16 text-white">
-      <div className="grid md:grid-cols-4 gap-10">
+    <div className="w-full max-w-6xl mx-auto px-4 py-6 md:py-3 lg:px-0 lg:py-16 text-white">
+      <div className="grid md:grid-cols-4 md:gap-10 gap-4">
         <div>
           <div>
             <NavLink
               to="/"
-              className="text-xl mt-2 font-bold flex items-center space-x-2"
+              className="text-xl mt-2 font-bold flex items-center md:justify-start justify-center space-x-2"
             >
-              <img className="w-100" src={logo} alt="logo" />
+              <img className="md:w-100" src={logo} alt="logo" />
             </NavLink>
             <ul className="social-icons duration-500 flex justify-center items-center gap-2 my-4">
             
@@ -62,27 +62,27 @@ function Footer() {
           </div>
         </div>
         <div>
-          <div>
-            <h5 className="font-bold text-white text-2xl uppercase">company</h5>
-            <ul className="space-y-4 mt-4">
+          <div className="md:text-start text-center">
+            <h5 className="font-bold text-white md:text-2xl text-xl my-2 uppercase">company</h5>
+            <ul className="md:block flex gap-4 justify-center items-center md:text-base text-[14px]">
                 <li><img className="inline" src={checkIcon} alt="" /> Terms of Use</li>
                 <li><img className="inline" src={checkIcon} alt="" /> Contact Us</li>
             </ul>
           </div>
         </div>
         <div>
-          <div>
-            <h5 className="font-bold text-white text-2xl uppercase">company</h5>
-            <ul className="space-y-4 mt-4">
+          <div className="md:text-start text-center">
+            <h5 className="font-bold text-white  md:text-2xl text-xl my-2 uppercase">company</h5>
+            <ul className="md:block flex gap-4 justify-center items-center md:text-base text-[14px]">
                 <li><img className="inline" src={checkIcon} alt="" /> About Us</li>
                 <li><img className="inline" src={checkIcon} alt="" /> Brand Kit</li>
             </ul>
           </div>
         </div>
         <div>
-          <div>
-            <h5 className="font-bold text-white text-2xl uppercase">company</h5>
-            <ul className="space-y-4 mt-4">
+          <div className="md:text-start text-center">
+            <h5 className="font-bold text-white md:text-2xl text-xl my-2 uppercase">company</h5>
+            <ul className="md:block flex gap-4 justify-center items-center md:text-base text-[14px]">
                 <li><img className="inline" src={checkIcon} alt="" /> Reach Profity Target</li>
                 <li><img className="inline" src={checkIcon} alt="" /> Do Not Violate Max & Daily Drawdown</li>
             </ul>
@@ -91,7 +91,7 @@ function Footer() {
       </div>
       <div className="text-center">
         <h3 className="text-lg font-bold text-white my-6">DISCLAIMER</h3>
-          <p className="text-base text-white text-center">
+          <p className="md:text-base text-[14px] text-white text-center">
             FUNDEDLAKE is provided by Forest Park FX LTD. Forest Park FX LTD
             offers fee-based simulated trading assessments for Potential
             Traders.
@@ -103,7 +103,7 @@ function Footer() {
             into a Trader Agreement with Forest Park FX LTD. Forest Park FX LTD
             does not provide any trading education or other services.
           </p>
-          <p className="text-base text-white text-center mt-10">
+          <p className="md:text-base text-[14px] text-white text-center mt-10">
             &copy; 2025 FundedLake. All rights reserved.
           </p>
       </div>

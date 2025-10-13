@@ -11,7 +11,7 @@ function SuccessStory() {
     <div className="md:py-16 md:px-0 px-6 py-10 relative">
       <img className="saperator absolute top-0 left-0 w-full" src={botSep} alt="" />
       <img className="saperator absolute bottom-0 left-0 w-full" src={botSep} alt="" />
-      <img className="scale-plus-animation absolute z-0 top-24 left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
+      <img className="scale-plus-animation absolute z-0 top-32 left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
       <img className="scale-plus-animation absolute z-0 right-20 bottom-56 w-56" src={coineCubeIcon} alt="" />
       <motion.h2 className="md:leading-[1.1em] font-bold title-font  z-[1] relative mb-2 mt-10 text-center text-white"
        initial={{ opacity: 0, scale: 0.8 }}

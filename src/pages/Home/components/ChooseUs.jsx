@@ -3,8 +3,10 @@ import featureImg1 from "/assets/why-choose-us-1.png";
 import featureImg2 from "/assets/why-choose-us-2.png";
 import featureImg3 from "/assets/why-choose-us-3.png";
 import featureImg4 from "/assets/why-choose-us-4.png";
+import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
+import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 import botSep from "/assets/bot-saprator.jpg";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 function ChooseUs() {
   const featuresData = [
@@ -54,25 +56,35 @@ function ChooseUs() {
 
   return (
     <section id="why-choose-us" className="text-white pt-10 pb-10 px-6 relative">
-        <img className="saperator absolute top-0 left-0 w-full"
-              src={botSep}
-              alt=""
-            />
+      <img
+        className="scale-plus-animation absolute left-10 w-56 "
+        src={dollarCubeIcon}
+        alt=""
+      />
+      <img
+        className="scale-plus-animation absolute bottom-0 right-10 w-56"
+        src={coineCubeIcon}
+        alt=""
+      />
+      <img className="saperator absolute top-0 left-0 w-full"
+        src={botSep}
+        alt=""
+      />
       <motion.h2 className="text-center mt-12"
-      initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1.1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          viewport={{ once: true, amount: 0.4 }} // 
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1.1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.4 }} // 
       >Why Choose Us</motion.h2>
       <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-5">
         <motion.div
-        variants={container}
-        className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 md:gap-4 gap-12 text-center">
+          variants={container}
+          className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 md:gap-4 gap-12 text-center">
           {featuresData.map((item) => (
             <motion.div
-             variants={item1}
-             key={item.id}
-             className="features-col flex flex-col items-center justify-start space-y-4 pb-5"
+              variants={item1}
+              key={item.id}
+              className="features-col flex flex-col items-center justify-start space-y-4 pb-5"
             >
               <div>
                 <img

@@ -30,7 +30,7 @@ function TraderWorld() {
         alt="Dollar Cube"
       />
       <img
-        className="absolute bottom-16 right-10 w-56 -rotate-2 opacity-30 z-[1]"
+        className="absolute bottom-16 right-10 w-56 -rotate-2 opacity-30"
         src={coineCubeIcon}
         alt="Coin Cube"
       />

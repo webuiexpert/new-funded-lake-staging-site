@@ -15,7 +15,7 @@ function PriceTab() {
           alt=""
         />
         <img
-          className="scale-plus-animation absolute right-20 bottom-72 w-56 -rotate-52 z-[1]"
+          className="scale-plus-animation md:block hidden absolute right-20 bottom-72 w-56 -rotate-52"
           src={coineCubeIcon}
           alt=""
         />

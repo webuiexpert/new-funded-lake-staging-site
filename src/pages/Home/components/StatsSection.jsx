@@ -47,14 +47,14 @@ export default function StatsSection() {
         alt=""
       />
       <img
-        className="scale-plus-animation absolute right-20 w-56 -rotate-52 z-[1]"
+        className="scale-plus-animation absolute right-20 w-56 -rotate-52"
         src={coineCubeIcon}
         alt=""
       />
       <motion.div
         variants={container}
         ref={ref}
-        className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white relative z-[2]"
+        className="md:max-w-6xl max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white relative z-[2]"
       >
         {stats.map((stat, index) => (
           <motion.div
@@ -65,10 +65,10 @@ export default function StatsSection() {
             transition={{ delay: 0.2 * index }}
             className="bg-eff-col border border-[#2f373d] rounded-2xl hover:bg-[linear-gradient(120deg,#944FEB_0%,#DB5D41_37%,#944FEB_100%)] duration-700 ease-linear flex flex-col items-center justify-center relative w-full h-[180px] group p-[1px] gap-6 bg-[var(--accent-color)] z-10"
           >
-            <span class="dot_1 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  top-3 left-3 rounded-full"></span>
-                <span class="dot_2 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  bottom-3 left-3 rounded-full"></span>
-                <span class="dot_3 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  top-3 right-3 rounded-full"></span>
-                <span class="dot_4 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  bottom-3 right-3 rounded-full"></span>
+            <span class="dot_1 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  top-5 left-5 rounded-full"></span>
+                <span class="dot_2 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  bottom-5 left-5 rounded-full"></span>
+                <span class="dot_3 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  top-5 right-5 rounded-full"></span>
+                <span class="dot_4 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  bottom-5 right-5 rounded-full"></span>
             <div className=" font-bold text-white bg-[#070710] w-full h-full flex items-center justify-center flex-col gap-4 rounded-2xl">
               <div className="flex text-5xl relative items-center rounded-2xl justify-center w-[100%]">
                 {inView && (

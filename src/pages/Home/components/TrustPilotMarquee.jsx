@@ -15,6 +15,8 @@ import circleShape from "/assets/decoration_shape_circle.svg";
 // import trustpilotimg14  from "/assets/trust-pilot-img14.png";
 import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
+import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
+import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 import { motion } from "framer-motion";
 
 function TrustPilotMarquee() {
@@ -30,7 +32,15 @@ function TrustPilotMarquee() {
   // bg-[radial-gradient(circle,rgba(2,33,80,1)_6%,rgba(0,0,0,1)_47%)]
 
   return (
-    <div className="overflow-hidden md:pb-36 relative whitespace-nowrap py-10">
+    <div className="overflow-hidden relative whitespace-nowrap md:py-24 py-16">
+      <img className="absolute top-0 left-10 w-60 rotate-[28deg] opacity-30" src={dollarCubeIcon}
+              alt="Dollar Cube"
+            />
+            <img
+              className="absolute top-20 right-10 w-36 -rotate-2 opacity-30"
+              src={coineCubeIcon}
+              alt="Coin Cube"
+            />
       <img
         className="saperator absolute bottom-0 left-0 w-full z-10"
         src={topSep}
@@ -46,9 +56,9 @@ function TrustPilotMarquee() {
         <img className="shape_circle" src={circleShape} alt="" />
       </div>
 
-      <div className="flex flex-wrap w-full md:mb-16 mb-8 flex-col items-center text-center">
+      <div className="flex flex-wrap w-full md:mb-10 mb-8 flex-col items-center text-center">
         <motion.h2
-          className="sm:text-[50px] text-2xl font-bold title-font mt-20 mb-2 text-white"
+          className="sm:text-[50px] text-2xl font-bold title-font mb-2 text-white"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1.1 }}
           transition={{ duration: 1, ease: "easeInOut" }}

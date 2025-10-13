@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import logo from "/assets/logo.webp";
+import SecondaryButton from "./SecondaryButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,18 +51,21 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden lg:flex space-x-2">
-          <a
+          {/* <a
             href="https://fundedlakedashboard.propaccount.com/en/sign-in"
             className="ico_btn_outline  relative z-0 border-[var(--color-primary)] border rounded-md hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
           >
             DASHBOARD
-          </a>
-          <a
+          </a> */}
+
+          {/* <a
             href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
             className="border-[var(--color-primary)] border rounded-md bg-[#032070] hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
           >
             GET FUNDED
-          </a>
+          </a> */}
+           <SecondaryButton BtnText="Dashboard" BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in" />
+          <SecondaryButton BtnText="GET FUNDED" BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -118,8 +122,8 @@ const Navbar = () => {
           </NavLink>
           {/* <a className='px-[15px] py-0 hover:text-white hover:bg-primary duration-300' href="https://fundedlakedashboard.propaccount.com/en/affiliates" target='_blank'>AFFILIATE PROGRAM</a> */}
           {/* Buttons */}
-          <div className="lg:flex space-x-2">
-            <a
+          <div className="lg:flex space-y-4">
+            {/* <a
               href="https://fundedlakedashboard.propaccount.com/en/sign-in"
               className="bg-[var(--accent-color)] border rounded-full hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
             >
@@ -130,7 +134,10 @@ const Navbar = () => {
               className="border rounded-full bg-[#032070] hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
             >
               GET FUNDED
-            </a>
+            </a> */}
+
+             <SecondaryButton BtnText="Dashboard" BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in" />
+          <SecondaryButton BtnText="GET FUNDED" BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
           </div>
         </div>
       )}
