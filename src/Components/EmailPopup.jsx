@@ -50,7 +50,7 @@ function EmailPopup() {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 bg-[#000000cb] bg-opacity-60 z-[9999] flex items-start justify-center font-lexend">
+    <div className="fixed inset-0 bg-[#000000cb] bg-opacity-60 z-[9999] flex md:items-center justify-center font-lexend">
       <div className="email-pop relative bg-gradient-to-br from-[#221f4a] to-[#080611] text-white w-[100%] overflow-y-auto lg:max-w-5xl md:max-w-[90%] max-w-[320px] md:mt-5 mt-6 px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 overscroll-contain touch-auto">
         <button
           className="absolute top-3 right-3 cursor-pointer text-white text-4xl font-bold"
