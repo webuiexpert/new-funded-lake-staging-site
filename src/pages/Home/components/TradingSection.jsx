@@ -35,7 +35,7 @@ function TradingSection() {
   return (
     <div className="relative pt-10 pb-20">
       <img
-        className="upDownAnim absolute md:w-36 w-20 md:bottom-10 md:left-2 left-5 bottom-5 opacity-60"
+        className="upDownAnim absolute lg:w-36 md:w-24 w-20 md:bottom-10 md:left-2 left-5 bottom-5 opacity-60"
         src={walletIcon}
         alt=""
       />
@@ -59,7 +59,7 @@ function TradingSection() {
 
       {/* Cards animation */}
       <motion.div
-        className="relative z-[0] w-full max-w-6xl mx-auto flex flex-wrap px-4 lg:px-0 mt-10 md:gap-10 gap-4 justify-center"
+        className="relative z-[0] w-full max-w-6xl mx-auto flex flex-wrap px-4 lg:px-0 mt-10 lg:gap-10 md:gap-6 gap-4 justify-center"
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
@@ -69,7 +69,7 @@ function TradingSection() {
           <motion.div
             key={index}
             variants={cardVariants}
-            className="trade-col hover:scale-105 duration-200 md:w-[31%] w-[80%] flex flex-col items-center gap-4 px-5 md:py-10 py-6 rounded-2xl"
+            className="trade-col hover:scale-105 duration-200 lg:w-[31%] md:w-[30%] w-[80%] flex flex-col items-center gap-4 px-5 md:py-10 py-6 rounded-2xl"
           >
             <img src={card.icon} alt={card.title} width={60} />
             <h5 className="text-2xl font-bold text-white uppercase">

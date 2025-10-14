@@ -6,7 +6,7 @@ import ScrollDownIndicator from "../../../Components/ScrollDownIndicator";
 
 function HeroSection() {
   return (
-    <div className="hero-section md:py-24 py-16 lg:h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
+    <div className="hero-section lg:py-24 md:py-10 py-16 lg:h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
       <div className="tg-bg-gradient d-block navy-bg-gradient"></div>
       <div className="navy-left-side-gradient d-block"></div>
       <div className="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown bg-[radial-gradient(114.99% 94.16% at 72.92% 82.18%,#111111 47.39%,#091534 68.23%,#00c4f4 86.63%)]"></div>
@@ -18,11 +18,11 @@ function HeroSection() {
         <span className="ripple-15"></span>
       </div>
     
-      <img className="upDownAnim absolute md:w-28 w-16 md:bottom-36 bottom-10 md:left-10 left-5 opacity-60"
+      <img className="upDownAnim absolute lg:w-36 w-20 md:bottom-36 bottom-10 md:left-10 left-5 opacity-60"
         src={walletIcon}
         alt=""
       />
-      <img className="upDownAnim absolute md:w-28 w-16 md:bottom-36 bottom-16  md:right-10 right-5 opacity-60"
+      <img className="upDownAnim absolute lg:w-36 w-20 md:bottom-36 bottom-16  md:right-10 right-5 opacity-60"
         src={lockerIcon}
         alt=""
       />
@@ -49,7 +49,12 @@ function HeroSection() {
           text="Join our discord community"
           link="https://discord.gg/vDSnjmxndy"
         />
-        <PrimaryButton text="Signup now" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
+       <div className="flex md:flex-row flex-col gap-4 items-center w-full justify-center">
+         <PrimaryButton text="Signup now" link="https://fundedlakzedashboard.propaccount.com/en/sign-up" />
+        <div className="md:block hidden">
+          <PrimaryButton text="Get Funded" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
+        </div>
+       </div>
       </div>
       <div>
         <ScrollDownIndicator />

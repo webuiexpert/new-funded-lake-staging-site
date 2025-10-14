@@ -32,7 +32,7 @@ function TwoStepPriceCard() {
   ];
 
   return (
-    <div className="grid md:grid-cols-3 grid-cols-1 gap-6 mt-12 lg:w-[100%] mx-auto">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12 lg:w-[100%] mx-auto">
       <PhaseCard title="PHASE ONE" highlight="text-[#00AEEF]" steps={onephase} bgImg={phaseBgBlackImg} />
       <PhaseCard title="PHASE TWO" highlight="text-[#00AEEF]" steps={secondphase}  bgImg={phaseBgBlackImg} />
       <PhaseCard title="FUNDED" highlight="text-white" steps={fundedSteps}  bgImg={phaseBgBlueImg} titleColor="text-white" borderColor="border-white" />

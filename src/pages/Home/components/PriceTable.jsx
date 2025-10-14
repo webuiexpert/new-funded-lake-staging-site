@@ -8,7 +8,7 @@ import PriceTableBtns from "../../../Components/PriceTableBtns";
 
 
 export default () => (
-  <Tabs className="priceTab md:text-[14px] md:max-w-5xl max-w-full mx-auto font-bold text-sm text-white relative z-20">
+  <Tabs className="priceTab md:text-[14px] lg:max-w-5xl max-w-full mx-auto font-bold text-sm text-white relative z-20">
     <TabList className="priceTabUl overflow-hidden bg-[#000b1f] w-full">
       <Tab className="cursor-pointer md:px-6 md:py-3 py-2 px-4 bg-dark mx-0 hover:bg-black duration-200 hover:text-dark rounded-full">
         ONE STEP
@@ -24,19 +24,19 @@ export default () => (
     <TabPanel className="one-step InnerPriceTab mt-10 lg:text-lg">
       <Tabs>
         <TabList>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $5K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $10K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $25K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $50K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full leading-4">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full leading-4">
             $100K
             <br />
             <span className="lg:text-[10px] text-[5px] text-[#fff608]">
@@ -44,10 +44,10 @@ export default () => (
               MOST POPULAR{" "}
             </span>
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $250K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $400K
           </Tab>
         </TabList>
@@ -82,32 +82,32 @@ export default () => (
         </TabPanel>
       </Tabs>
     </TabPanel>
-    <TabPanel className="two-step InnerPriceTab mt-10 lg:text-lg">
+    <TabPanel className="two-step InnerPriceTab mt-10 lg:text-lg overflow-x-auto">
       <Tabs>
         <TabList>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $5K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $10K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $25K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $50K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full leading-4">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full leading-4">
             $100K
             <br />
             <span class="lg:text-[10px] text-[5px] text-[#fff608]">
               MOST POPULAR
             </span>
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $250K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $400K
           </Tab>
         </TabList>
@@ -144,19 +144,19 @@ export default () => (
     <TabPanel className="instant  InnerPriceTab mt-10 lg:text-lg mx-auto">
       <Tabs>
         <TabList>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $5K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $10K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $25K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
             $50K
           </Tab>
-          <Tab className="my-2 mx-2 md:px-6 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full leading-4">
+          <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full leading-4">
             $100K
             <br />
             <span class="lg:text-[10px] text-[5px] text-[#fff608]">

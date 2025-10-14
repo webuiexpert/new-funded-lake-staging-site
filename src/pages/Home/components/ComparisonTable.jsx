@@ -56,7 +56,7 @@ function ComparisonTable() {
       <motion.h2
         className="text-center text-white text-3xl font-bold mb-8 md:max-w-6xl"
         initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1.1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
         viewport={{ once: true, amount: 0.4 }}
       >

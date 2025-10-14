@@ -63,14 +63,14 @@ export default function StatsSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2 * index }}
-            className="bg-eff-col border border-[#2f373d rounded-2xl hover:bg-[linear-gradient(120deg,#944FEB_0%,#DB5D41_37%,#944FEB_100%)] duration-700 ease-linear flex flex-col items-center justify-center relative md:w-full md:h-[180px] w-[240px] h-[140px] group p-[1px] gap-6 bg-[var(--accent-color)] z-10 mx-auto"
+            className="bg-eff-col border border-[#2f373d rounded-2xl hover:bg-[linear-gradient(120deg,#944FEB_0%,#DB5D41_37%,#944FEB_100%)] duration-700 ease-linear flex flex-col items-center justify-center relative lg:w-full lg:h-[180px] md:w-full md:h-[140px] w-[240px] h-[140px] group p-[1px] gap-6 bg-[var(--accent-color)] z-10 mx-auto"
           >
             <span class="dot_1 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  top-5 left-5 rounded-full"></span>
                 <span class="dot_2 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  bottom-5 left-5 rounded-full"></span>
                 <span class="dot_3 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  top-5 right-5 rounded-full"></span>
                 <span class="dot_4 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  bottom-5 right-5 rounded-full"></span>
             <div className="font-bold text-white bg-[#070710] w-full h-full flex items-center justify-center flex-col md:gap-4 gap-2 rounded-2xl">
-              <div className="flex lg:text-5xl md:text-4xl text-3xl relative items-center rounded-2xl justify-center w-[100%]">
+              <div className="flex lg:text-5xl md:text-3xl text-3xl relative items-center rounded-2xl justify-center w-[100%]">
                 {inView && (
                 <CountUp
                   end={stat.value}
@@ -80,7 +80,7 @@ export default function StatsSection() {
                 />
               )}
               </div>
-               <p className="lg:text-3xl md:text-2xl text-xl font-semibold">{stat.label}</p>
+               <p className="lg:text-3xl text-[18px] font-semibold">{stat.label}</p>
             </div>
            
           </motion.div>

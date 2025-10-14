@@ -62,7 +62,7 @@ function HowWorks() {
         How it works
       </motion.h2>
 
-      <div className="works-box md:max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10 lg:px-0 md:px-16 px-4">
+      <div className="works-box md:max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10 lg:px-0 px-4">
         <motion.div
           variants={container}
           initial="hidden"
@@ -80,7 +80,7 @@ function HowWorks() {
                 src={stepsImg1}
                 alt=""
               />
-              <h3 className="lg:text-3xl md:text-xl text-start font-bold uppercase">
+              <h3 className="lg:text-3xl text-xl text-start font-bold uppercase">
                 Choose Your Program
               </h3>
               <ul className="space-y-4 text-start inline-block">
@@ -107,7 +107,7 @@ function HowWorks() {
               <h4 className="text-center my-5 w-full">EVALUATION PHASE</h4>
             </div>
             <img
-              className="howz-down-arrow lg:w-16 w-16 absolute md:-right-8 md:bottom-28 md:block hidden md:rotate-[0deg] rotate-[90deg] z-10"
+              className="howz-down-arrow lg:w-16 w-10 absolute lg:-right-8 md:-right-4 md:bottom-28 md:block hidden md:rotate-[0deg] rotate-[90deg] z-10"
               src={arrowIcon}
               alt=""
             />
@@ -123,7 +123,7 @@ function HowWorks() {
                 src={stepsImg2}
                 alt=""
               />
-              <h3 className="lg:text-3xl md:text-xl text-2xl text-start font-bold uppercase">
+              <h3 className="lg:text-xl md:text-[12px] text-md text-start font-bold uppercase">
                 Earn as a Funded Trader
               </h3>
               <ul className="space-y-4 text-start inline-block">
@@ -142,7 +142,7 @@ function HowWorks() {
               <h4 className="text-center my-5 w-full">FUNDED PHASE</h4>
             </div>
             <img
-              className="howz-down-arrow lg:w-16 w-16 absolute md:-right-8 md:bottom-28 md:block hidden md:rotate-[0deg] rotate-[90deg] z-10"
+              className="howz-down-arrow lg:w-16 w-10 absolute lg:-right-8 md:-right-4 md:bottom-28 md:block hidden md:rotate-[0deg] rotate-[90deg] z-10"
               src={arrowIcon}
               alt=""
             />
@@ -158,7 +158,7 @@ function HowWorks() {
                 src={stepsImg3}
                 alt=""
               />
-              <h3 className="lg:text-3xl md:text-xl text-2xl text-start font-bold uppercase">
+              <h3 className="lg:text-xl md:text-[12px] text-md text-start font-bold uppercase">
                 Receive Your Payout
               </h3>
               <ul className="space-y-4 text-start inline-block">
@@ -178,7 +178,7 @@ function HowWorks() {
             </div>
             <div className="text-center w-full">
               <img
-                className="lg:w-38 w-24 mx-auto"
+                className="lg:w-38 w-20 mx-auto"
                 src={stepsIcon3}
                 alt=""
               />
