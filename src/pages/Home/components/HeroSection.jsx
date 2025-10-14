@@ -38,7 +38,7 @@ function HeroSection() {
           <br />
           <span className="text-[var(--color-primary)]">EMPOWER </span>TRADERS
         </motion.h1>
-        <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mt-6 font-medium mx-auto">
+        <p className="text-white text-sm  md:text-xl lg:text-2xl max-w-4xl mt-6 font-medium mx-auto">
           “Lightning-fast payouts, instant funding, no hidden rules or
           consistency requirements - take on challenges with up to $400,000 in
           capital!”

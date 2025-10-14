@@ -8,7 +8,7 @@ import PriceTableBtns from "../../../Components/PriceTableBtns";
 
 
 export default () => (
-  <Tabs className="priceTab md:text-[14px] md:max-w-5xl max-w-full mx-auto font-bold text-sm text-white">
+  <Tabs className="priceTab md:text-[14px] md:max-w-5xl max-w-full mx-auto font-bold text-sm text-white relative z-20">
     <TabList className="priceTabUl overflow-hidden bg-[#000b1f] w-full">
       <Tab className="cursor-pointer md:px-6 md:py-3 py-2 px-4 bg-dark mx-0 hover:bg-black duration-200 hover:text-dark rounded-full">
         ONE STEP

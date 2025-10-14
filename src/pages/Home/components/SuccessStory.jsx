@@ -21,13 +21,13 @@ function SuccessStory() {
       >
         <span className="text-white">trader's, </span>success story
       </motion.h2>
-      <div className="success-story mt-16 mb-24 rounded-2xl  z-[1] relative  md:text-left text-center md:max-w-5xl mx-auto md:p-8 p-3 lg:p-12 shadow-lg">
-         <h5 className="text-2xl lg:text-3xl font-bold text-white mb-4 w-full text-center">
+      <div className="success-story mt-16 mb-24 rounded-2xl z-[1] relative md:text-left text-center md:max-w-5xl mx-auto md:px-8 md:py-8 px-3 py-5 lg:p-12 shadow-lg">
+         <h5 className="md:text-2xl text-xl lg:text-3xl font-bold text-white md:mb-4 w-full text-center">
               Life Changing Payouts Start Here
             </h5>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-8">
-          <div>
-            <p className="text-gray-300 mb-4 text-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:mt-8 mt-4">
+          <div className="order-2 md:order-1">
+            <p className="text-gray-300 mb-4 md:text-lg text-sm">
               <span className="font-semibold text-[var(--color-primary)]">Arjun Mehta </span>
               from India turned a $50,000 FundedLake 2-Step account purchased
               for just $225 into a life changing payout in just 8 days. What
@@ -35,17 +35,14 @@ function SuccessStory() {
               reality: financial freedom, flexibility, and proof that with
               discipline and strategy, anything is possible.
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg text-sm">
               At FundedLake, stories like this are not rare, they are becoming
               the norm. Every payout is not just a withdrawal, it is a dream
               funded, a goal achieved, and a trader stepping into a whole new
               chapter of their life.
             </p>
           </div>
-
-          {/* Right Side Image */}
-          <div className="flex justify-center">
-            {/* Replace with real image */}
+          <div className="flex justify-center order-1 md:order-2">
             <div className="w-full">
               <img
                 src={certifiacteImg}

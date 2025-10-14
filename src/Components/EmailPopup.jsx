@@ -51,7 +51,7 @@ function EmailPopup() {
 
   return (
     <div className="fixed inset-0 bg-[#000000cb] bg-opacity-60 z-[9999] flex items-center justify-center font-lexend">
-      <div className="email-pop relative bg-gradient-to-br from-[#221f4a] to-[#080611] text-white w-[100%] overflow-y-auto lg:max-w-5xl px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 overscroll-contain touch-auto">
+      <div className="email-pop relative bg-gradient-to-br from-[#221f4a] to-[#080611] text-white w-[100%] overflow-y-auto lg:max-w-5xl md:max-w-4xl border max-w-[320px] md:mt-auto mt-20 px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 overscroll-contain touch-auto">
         <button
           className="absolute top-3 right-3 cursor-pointer text-white text-4xl font-bold"
           onClick={() => setShow(false)}
@@ -62,10 +62,10 @@ function EmailPopup() {
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
           <img className="border-2 md:w-full w-[60%] md-mx-0 mx-auto" src={popupImg100} alt="" />
           <div className="popupContent text-start flex-col flex justify-around">
-            <h3 className="font-semibold md:text-[24px] text-[20px] text-center md:text-left">
+            <h3 className="font-semibold md:text-[24px] text-[18px] text-center md:text-left">
               ⚡WIN A FREE 100k 2-STEP CHALLENGE GIVEAWAY ⚡
             </h3>
-            <p className="md:text-2xl text-xl mt-4 text-center md:text-left">
+            <p className="lg:text-2xl md:text-xl text-base mt-4 text-center md:text-left">
               Enter your email and join our discord for a chance to win a 100k 2-Step challenge account
               Winner will be announced on discord
             </p>
@@ -77,7 +77,7 @@ function EmailPopup() {
             >
               <span className="emailInput flex items-center border w-full py-1 pl-4 pr-1 rounded-md bg-white">
                 <input
-                  className="md:py-3 md:px-1 py-3 px-2 rounded-full w-full focus:none outline-none text-black bg-[transparent]"
+                  className="md:py-3 md:px-1 py-2 px-2 rounded-full w-full focus:none outline-none text-black bg-[transparent]"
                   type="email"
                   name="user_email"
                   required
@@ -85,7 +85,7 @@ function EmailPopup() {
                 />
                 <button
                   type="submit"
-                  className="bg-gradient-to-br from-[#221f4a] to-[#080611] md:px-2 md:py-3 py-3 px-4 w-1/3 rounded-md font-bold md:text-lg text-sm uppercase"
+                  className="bg-gradient-to-br from-[#221f4a] to-[#080611] md:px-2 md:py-3 py-2 px-3 w-1/3 rounded-md font-bold md:text-lg text-sm uppercase"
                 >
                   Submit
                 </button>

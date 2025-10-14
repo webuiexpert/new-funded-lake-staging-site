@@ -55,9 +55,9 @@ function ChooseUs() {
   };
 
   return (
-    <section id="why-choose-us" className="text-white pt-10 pb-10 px-6 relative">
+    <section id="why-choose-us" className="text-white md:pt-10 pt-2 md:pb-10 pb-6 px-6 relative ">
       <img
-        className="scale-plus-animation absolute left-10 w-56 "
+        className="scale-plus-animation absolute left-10 w-56 md:block hidden"
         src={dollarCubeIcon}
         alt=""
       />
@@ -76,7 +76,7 @@ function ChooseUs() {
         transition={{ duration: 1, ease: "easeInOut" }}
         viewport={{ once: true, amount: 0.4 }} // 
       >Why Choose Us</motion.h2>
-      <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-5">
+      <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-8">
         <motion.div
           variants={container}
           className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 md:gap-4 gap-12 text-center">

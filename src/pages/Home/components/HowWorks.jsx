@@ -62,7 +62,7 @@ function HowWorks() {
         How it works
       </motion.h2>
 
-      <div className="works-box md:max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10 lg:px-0 md:px-16 px-10">
+      <div className="works-box md:max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10 lg:px-0 md:px-16 px-4">
         <motion.div
           variants={container}
           initial="hidden"

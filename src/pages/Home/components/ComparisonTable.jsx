@@ -1,9 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
-import dollarCubeIcon from "/assets/bicon-icons-bg-left.png"
-import coineCubeIcon from "/assets/bicon-icons-bg-right.png"
-import { motion } from "framer-motion";
+import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
+import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 
 function ComparisonTable() {
   const rows = [
@@ -35,78 +35,68 @@ function ComparisonTable() {
   ];
 
   return (
-    <div className="flex items-center justify-center relative md:py-24 md:pt-24 pt-16 md:px-0 px-4">
-      <div class="navy-left-side-gradient d-block"></div>
-      <div class="navy-right-side-gradient d-block"></div>
-       <img className="scale-plus-animation absolute left-10 w-56 rotate-28" src={dollarCubeIcon} alt="" />
-       <img className="scale-plus-animation absolute right-20 w-56 -rotate-52" src={coineCubeIcon} alt="" />
-       <div class="navy-left-side-gradient d-block"></div>
+    <div className="relative md:py-24 py-16 pt-16 px-4 flex flex-col items-center ">
+      {/* Background Icons */}
       <img
-        className="saperator absolute top-0 left-0 w-full"
-        src={topSep}
+        className="absolute left-10 w-56 opacity-20"
+        src={dollarCubeIcon}
         alt=""
       />
       <img
-        className="saperator absolute bottom-0 left-0 w-full"
-        src={botSep}
+        className="absolute right-20 w-56 opacity-20"
+        src={coineCubeIcon}
         alt=""
       />
-      <div className="w-full max-w-6xl md:mt-16">
-        <motion.h2 className="text-center px-4"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1.1 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.4 }}
-        >
-          <span className="text-white">
-            Why Traders are switching to
-          </span>{" "}
-          fundedlake
-        </motion.h2>
-        <div className="comparision-box w-full mt-10 relative z-10 mb-16 rounded-3xl shadow-2xl overflow-hidden border border-[#250b3a]">
-          {/* Header */}
-          <div className="grid grid-cols-3">
-            <div className="md:px-6 md:py-5  px-2 py-3"></div>
-            <div className="md:px-6 md:py-5  px-2 py-3 text-center border-x border-[#5184a0]">
-              <h5 className="md:text-xl text-[14px] font-bold text-white uppercase tracking-wider">
-                Other Firms
-              </h5>
-            </div>
-            <div className="md:px-6 md:py-5  px-2 py-3 text-center">
-              <h5 className="md:text-xl text-[14px] font-bold text-white uppercase tracking-wider">
-                FundedLake
-              </h5>
-            </div>
-          </div>
 
-          {/* Rows */}
-          {rows.map((row, index) => (
-            <div
-              key={index}
-              className={`grid grid-cols-3 ${
-                index % 2 === 0
-                  ? "bg-gradient-to-r from-blue-900/30 to-blue-800/30"
-                  : "bg-[#0d547c]"
-              } border-t border-[#5184a0]`}
-            >
-              <div className="md:px-6 md:py-5  px-2 py-3  flex items-center">
-                <span className="text-white font-semibold text-[12px] md:text-base">
+      {/* Top and Bottom Separators */}
+      <img className="absolute top-0 left-0 w-full" src={topSep} alt="" />
+      <img className="absolute bottom-0 left-0 w-full" src={botSep} alt="" />
+
+      {/* Heading */}
+      <motion.h2
+        className="text-center text-white text-3xl font-bold mb-8 md:max-w-6xl"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1.1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.4 }}
+      >
+        Why Traders are switching to
+        <span className="text-white"> FundedLake</span>
+      </motion.h2>
+
+      {/* Table Wrapper (scrollable on small screens) */}
+      <div className="w-full max-w-4xl overflow-x-auto shadow-2xl md:rounded-3xl rounded-xl border border-[#250b3a] bg-[#001F3F]/60 backdrop-blur-md">
+        <table className="w-full border-collapse text-white text-center min-w-[600px]">
+          <thead>
+            <tr className="bg-gradient-to-r from-[#0b2447] to-[#19376d]">
+              <th className="py-4 px-3 text-left"></th>
+              <th className="py-4 px-3 border-x border-[#5184a0] uppercase">
+                Other Firms
+              </th>
+              <th className="py-4 px-3 uppercase">FundedLake</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, index) => (
+              <tr
+                key={index}
+                className={`border-t border-[#5184a0] ${
+                  index % 2 === 0 ? "bg-[#032070]/50" : "bg-[#0d547c]/40"
+                }`}
+              >
+                <td className="md:p-6 p-3 text-left font-semibold">
                   {row.feature}
-                </span>
-              </div>
-              <div className="md:px-6 md:py-5  px-2 py-3  flex items-center justify-center border-x border-[#5184a0]">
-                <span className="text-gray-300 text-center text-[12px] md:text-base font-medium">
+                </td>
+                <td className="md:p-6 p-3 border-x border-[#5184a0] text-gray-300">
                   {row.otherFirms}
-                </span>
-              </div>
-              <div className="md:px-6 md:py-5  px-2 py-3  flex items-center justify-center ">
-                <span className="text-cyan-300 text-center text-[12px] md:text-base font-bold uppercase tracking-wide">
+                </td>
+                <td className="md:p-6 p-3 text-cyan-300 font-bold uppercase">
                   {row.fundedLake}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

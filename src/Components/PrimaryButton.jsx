@@ -7,7 +7,7 @@ function PrimaryButton({ text, link }) {
       <div className="w-fit mx-auto relative transition-all duration-700">        
         <span className="ico_creative_btn relative inline-flex items-center overflow-hidden justify-center lg:px-10 md:px-7 lg:py-5  md:py-3 py-3 px-3 rounded-lg border-2  hover:border-[#011667] border-[#011667] text-[#fff] font-semibold group">
           {/* Left Arrows */}
-          <span className="relative flex items-center justify-center mr-6">
+          <span className="relative flex items-center justify-center md:mr-6 mr-3">
             <small className="btn-side-dot absolute top-[-10px] left-[-30px] w-2 h-2 bg-transparent border border-[#011667] rounded-full  opacity-70 group-hover:opacity-40 transition-all duration-300"></small>
             <small className="btn-side-dot absolute bottom-[-10px] left-[-30px] w-2 h-2 border border-[#011667] rounded-full opacity-70 group-hover:opacity-40 transition-all duration-300"></small>
             <svg
@@ -22,12 +22,12 @@ function PrimaryButton({ text, link }) {
           </span>
 
           {/* Text */}
-          <span className="md:text-[18px] text-[16px0] capitalize relative z-20 text-md font-semibold tracking-wide">
+          <span className="md:text-[18px] text-[14px] capitalize relative z-20 text-md text-center font-semibold tracking-wide">
             {text}
           </span>
 
           {/* Right Arrows */}
-          <span className="relative flex items-center justify-center ml-4">
+          <span className="relative flex items-center justify-center md:ml-6 ml-3">
             <small className="btn-side-dot absolute top-[-10px] right-[-30px] w-2 h-2 border border-[#011667] rounded-full opacity-70 group-hover:opacity-40 transition-all duration-300"></small>
             <small className="btn-side-dot absolute bottom-[-10px] right-[-30px] w-2 h-2 border border-[#011667] rounded-full opacity-70 group-hover:opacity-40 transition-all duration-300"></small>
             <svg
