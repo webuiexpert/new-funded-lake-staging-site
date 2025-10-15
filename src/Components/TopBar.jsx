@@ -1,6 +1,5 @@
 import { X } from "lucide-react";
 import { useState } from "react";
-import SecondaryButton from "./SecondaryButton";
 import CopyCouponButton from "./CopyCouponButton";
 
 function TopBar() {
@@ -27,11 +26,10 @@ function TopBar() {
             </button>
             
         </div> */}
-        <button onClick={() => navigator.clipboard.writeText("TRADE10"
+        <div onClick={() => navigator.clipboard.writeText("TRADE10"
               )}>
-            <CopyCouponButton onClick={() => navigator.clipboard.writeText("TRADE10"
-              )} couponCode="TRADE10" />
-        </button>
+            <CopyCouponButton couponCode="TRADE10" />
+        </div>
       </div>
     </div>
   );
