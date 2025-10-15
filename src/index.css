@@ -290,21 +290,16 @@ h4 {
     #000760 23.96%,
     #42005300 90%
   );
-  top: 0;
-  right: 0;
+  top: -5%;
+  right: -10%;
   transform: translateY(-8%) rotate(40deg);
-  z-index: 0;
+  z-index: 1;
 }
 .navy-left-side-gradient {
   width: 420px;
   height: 520px;
   position: absolute;
-  background: radial-gradient(
-    68.69% 49.15% at 50.02% 50.04%,
-    #000760 0.02%,
-    #000760 23.96%,
-    #42005300 90%
-  );
+  background: radial-gradient(68.69% 49.15% at 50.02% 50.04%, #000760 25.02%, #000760 23.96%, #42005300 76%);
   bottom: 0;
   left: -13%;
   z-index: 0;
@@ -342,31 +337,16 @@ h4 {
     opacity: 0.9;
   }
 }
-
 .ripple-shape2 {
   transform: skewX(220deg);
   position: relative;
-  z-index: 1;
+  z-index: 0;
   top: -135px;
   right: 163px;
   opacity: 0.3;
 }
 
-.ripple-11 {
-  width: 700px;
-  height: 700px;
-  position: absolute;
-  right: 40px;
-  top: 10%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: 1px solid var(--color-accent);
-  border-radius: 50%;
-  animation: ripple2 3s linear infinite;
-  opacity: 1;
-  transition: 0.4s;
-}
-.ripple-12 {
+.ripple-shape2 span {
   width: 700px;
   height: 700px;
   position: absolute;
@@ -378,21 +358,24 @@ h4 {
   border-radius: 50%;
   animation: ripple2 6s linear infinite;
   opacity: 1;
-  transition: 0.4s;
+    z-index: 0;
+}
+
+/* Sequential delay for each ripple */
+.ripple-11 {
+  animation-delay: 0s;
+}
+.ripple-12 {
+  animation-delay: 1s;
 }
 .ripple-13 {
-  width: 700px;
-  height: 700px;
-  position: absolute;
-  right: 40px;
-  top: 10%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: 1px solid var(--color-accent);
-  border-radius: 50%;
-  animation: ripple2 9s linear infinite;
-  opacity: 1;
-  transition: 0.4s;
+  animation-delay: 2s;
+}
+.ripple-14 {
+  animation-delay: 3s;
+}
+.ripple-15 {
+  animation-delay: 4s;
 }
 
 @keyframes ripple2 {
@@ -400,23 +383,15 @@ h4 {
     transform: scale(0);
     opacity: 1;
   }
-  10% {
-    opacity: 0.6;
-  }
-  30% {
-    opacity: 0.4;
-  }
-  40% {
+  50% {
     opacity: 0.2;
   }
-  50% {
-    opacity: 0.14;
-  }
   100% {
-    transform: scale(3.5);
+    transform: scale(2.5);
     opacity: 0;
   }
 }
+
 
 .hero-gradient-ball {
   height: 250px;

@@ -9,8 +9,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[var(--accent-color)] text-white shadow-md font-lexend sticky -top-[1px] z-[8888]">
-      <div className="w-full max-w-6xl mx-auto px-4 py-3 md:py-3 lg:px-0 lg:py-6  flex items-center justify-between">
+    <nav className=" text-white shadow-md relative bg-transparent">
+      <div className="w-full bg-transparent sticky top-0 left-0 max-w-6xl mx-auto px-4 py-3 md:py-3 lg:px-0 lg:py-6  flex items-center justify-between">
         {/* Logo */}
         <NavLink
           to="/"
