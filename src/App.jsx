@@ -9,15 +9,16 @@ import Footer from "./Components/Footer";
 import CustomCursor from "./Components/CustomCursor";
 import EmailPopup from "./Components/EmailPopup";
 import ScrollToTopButton from "./Components/ScrollToTopButton";
-import TopBar from "./Components/topBar";
+import TopBar from "./Components/TopBar";
 
 function App() {
   return (
     <Router>
-      <TopBar />
+      
       <CustomCursor />
       <EmailPopup />
       <div className="bg-[#06080e]">
+        <TopBar />
         <NavBar />
         <div className="mx-auto">
           <Routes>
