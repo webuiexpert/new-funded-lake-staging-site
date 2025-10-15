@@ -79,12 +79,12 @@ function ChooseUs() {
       <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-8">
         <motion.div
           variants={container}
-          className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 md:gap-4 gap-12 text-center">
+          className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4 text-center">
           {featuresData.map((item) => (
             <motion.div
               variants={item1}
               key={item.id}
-              className="features-col flex flex-col items-center justify-start space-y-4 pb-5"
+              className="features-col lg:p-0 p-5 lg:border-0  border rounded-xl border-[#9a9a9a80] flex flex-col items-center justify-start space-y-4 pb-5"
             >
               <div>
                 <img
