@@ -35,26 +35,26 @@ function ComparisonTable() {
   ];
 
   return (
-    <div className="relative md:py-24 py-16 pt-16 px-4 flex flex-col items-center ">
+    <div className="relative">
       {/* Background Icons */}
       <img
-        className="absolute left-10 w-56 opacity-20"
+        className="absolute left-10 md:top-56 w-56 opacity-20"
         src={dollarCubeIcon}
         alt=""
       />
       <img
-        className="absolute right-20 w-56 opacity-20"
+        className="absolute right-20 bottom-36 w-56 opacity-20"
         src={coineCubeIcon}
         alt=""
       />
 
       {/* Top and Bottom Separators */}
-      <img className="absolute top-0 left-0 w-full" src={topSep} alt="" />
-      <img className="absolute bottom-0 left-0 w-full" src={botSep} alt="" />
-
-      {/* Heading */}
+      <img className="w-full" src={topSep} alt="" />
+     
+      <div className=" md:max-w-6xl md:px-0 px-4 mx-auto my-10 flex flex-col items-center">
+        {/* Heading */}
       <motion.h2
-        className="text-center text-white text-3xl font-bold mb-8 md:max-w-6xl"
+        className="text-center text-white text-3xl font-bold mb-8"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -98,6 +98,8 @@ function ComparisonTable() {
           </tbody>
         </table>
       </div>
+      </div>
+       <img className="w-full" src={botSep} alt="" />
     </div>
   );
 }

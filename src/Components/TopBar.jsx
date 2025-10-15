@@ -1,6 +1,7 @@
 import { X } from "lucide-react";
 import { useState } from "react";
 import SecondaryButton from "./SecondaryButton";
+import CopyCouponButton from "./CopyCouponButton";
 
 function TopBar() {
   const [visible, setVisible] = useState(true);
@@ -18,14 +19,20 @@ function TopBar() {
         <p className="text-[14px] md:text-xl lg:text-xl font-medium max-w-[350px] md:max-w-none">
           10% off any program CODE:TRADE10
         </p>
-        <div className="flex gap-2">
+        {/* <div className="flex gap-2">
            <button
               onClick={() => navigator.clipboard.writeText("TRADE10"
               )}
-              className="px-2 py-1 hover:bg-white hover:text-black transition bg-[var(--color-primary)] rounded-md font-medium text-lg cursor-pointer">
+              className="px-2 py-1 hover:bg-white hover:text-black transition bg-[var(--color-primary)] rounded-md font-medium text-[16px] cursor-pointer">
               Copy TRADE10
             </button>
-        </div>
+            
+        </div> */}
+        <button onClick={() => navigator.clipboard.writeText("TRADE10"
+              )}>
+            <CopyCouponButton onClick={() => navigator.clipboard.writeText("TRADE10"
+              )} couponCode="TRADE10" />
+        </button>
       </div>
     </div>
   );

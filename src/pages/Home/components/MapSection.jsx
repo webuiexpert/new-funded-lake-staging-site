@@ -30,9 +30,9 @@ const MapSection = () => {
         viewport={{ once: true }}
         className="max-w-xl flex flex-col justify-center md:items-start items-center"
       >
-        <h5 className="text-2xl md:text-[1.3rem] text-white font-bold lg:mb-6 mb-4 md:text-left w-full text-center">
+        <h3 className="text-2xl lg:text-[3rem] md:text-3xl text-white font-bold lg:mb-6 mb-4 md:text-left w-full text-center">
           FUNDING TRADERS <br /> ALL OVER THE WORLD
-        </h5>
+        </h3>
         <p className="text-gray-300 md:text-base text-sm md:text-left text-justify mb-10">
           At FundedLake, we are proud to say that we empower traders over 20+ countries and COUNTING.
           Our growing international presence proves that great trading opportunities know no borders.
