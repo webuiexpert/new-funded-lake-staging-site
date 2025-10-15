@@ -6,7 +6,7 @@ function WhoWeAre() {
   return (
     <div className=''>
       {/* <WhoWeSection /> */}
-      <h3>Who we are</h3>
+      <h3>Who we are ?</h3>
     </div>
     )
 }
