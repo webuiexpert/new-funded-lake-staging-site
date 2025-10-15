@@ -115,9 +115,9 @@ h4 {
   color: #fff;
   font-weight: 800;
 }
-.priceTab .react-tabs__tab-list li:hover {
+/* .priceTab .react-tabs__tab-list li:hover {
   color: #181818;
-}
+} */
 .react-tabs__tab-list {
   border: none !important;
 }
@@ -609,6 +609,9 @@ h4 {
     width: fit-content;
     gap: 2px;
   }
+  .react-tabs__tab--selected {
+  border-radius: 12px !important;
+}
 }
 
 @media (min-width: 521px) and (max-width: 900px) {

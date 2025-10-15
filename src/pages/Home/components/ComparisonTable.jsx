@@ -65,7 +65,7 @@ function ComparisonTable() {
       </motion.h2>
 
       {/* Table Wrapper (scrollable on small screens) */}
-      <div className="w-full max-w-4xl overflow-x-auto shadow-2xl md:rounded-3xl rounded-xl border border-[#250b3a] bg-[#001F3F]/60 backdrop-blur-md">
+      <div className="w-full max-w-4xl overflow-x-auto shadow-2xl lg:mb-10 md:rounded-3xl rounded-xl border border-[#250b3a] bg-[#001F3F]/60 backdrop-blur-md">
         <table className="w-full border-collapse text-white text-center min-w-[600px]">
           <thead>
             <tr className="bg-gradient-to-r from-[#0b2447] to-[#19376d]">

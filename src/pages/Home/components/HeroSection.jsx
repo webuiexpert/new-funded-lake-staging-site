@@ -49,14 +49,14 @@ function HeroSection() {
           text="Join our discord community"
           link="https://discord.gg/vDSnjmxndy"
         />
-       <div className="flex md:flex-row flex-col gap-4 items-center w-full justify-center">
+       <div className="flex flex-col gap-4 items-center w-full justify-center">
          <PrimaryButton text="Signup now" link="https://fundedlakzedashboard.propaccount.com/en/sign-up" />
-        <div className="md:block hidden">
+        <div className="md:hidden block">
           <PrimaryButton text="Get Funded" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
         </div>
        </div>
       </div>
-      <div>
+      <div className="relative z-20">
         <ScrollDownIndicator />
       </div>
     </div>

@@ -51,27 +51,20 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden lg:flex space-x-2">
-          {/* <a
-            href="https://fundedlakedashboard.propaccount.com/en/sign-in"
-            className="ico_btn_outline  relative z-0 border-[var(--color-primary)] border rounded-md hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
-          >
-            DASHBOARD
-          </a> */}
-
-          {/* <a
-            href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
-            className="border-[var(--color-primary)] border rounded-md bg-[#032070] hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
-          >
-            GET FUNDED
-          </a> */}
-           <SecondaryButton BtnText="Dashboard" BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in" />
-          <SecondaryButton BtnText="GET FUNDED" BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
+          <SecondaryButton
+            BtnText="Dashboard"
+            BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in"
+          />
+          <SecondaryButton
+            BtnText="GET FUNDED"
+            BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
+          />
         </div>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden focus:outline-none flex bg-[var(--color-primary)] cursor-pointer py-[5px] px-2 rounded-[4px] gap-2 md:text-[16px] text-[14px] items-center"
+          className="lg:hidden focus:outline-none flex border cursor-pointer py-[5px] px-2 rounded-[6px] gap-2 md:text-[16px] text-[14px] items-center"
         >
           <Menu className="w-6 h-6" /> MENU
         </button>
@@ -120,24 +113,15 @@ const Navbar = () => {
           >
             FOREX EXPO DUBAI
           </NavLink>
-          {/* <a className='px-[15px] py-0 hover:text-white hover:bg-primary duration-300' href="https://fundedlakedashboard.propaccount.com/en/affiliates" target='_blank'>AFFILIATE PROGRAM</a> */}
-          {/* Buttons */}
           <div className="lg:flex space-y-4">
-            {/* <a
-              href="https://fundedlakedashboard.propaccount.com/en/sign-in"
-              className="bg-[var(--accent-color)] border rounded-full hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
-            >
-              DASHBOARD
-            </a>
-            <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
-              className="border rounded-full bg-[#032070] hover:bg-white hover:text-black duration-300 text-white px-4 py-2 font-bold text-sm"
-            >
-              GET FUNDED
-            </a> */}
-
-             <SecondaryButton BtnText="Dashboard" BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in" />
-          <SecondaryButton BtnText="GET FUNDED" BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
+            <SecondaryButton
+              BtnText="Dashboard"
+              BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in"
+            />
+            <SecondaryButton
+              BtnText="GET FUNDED"
+              BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
+            />
           </div>
         </div>
       )}

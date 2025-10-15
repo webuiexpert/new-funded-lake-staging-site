@@ -62,7 +62,7 @@ function ChooseUs() {
         alt=""
       />
       <img
-        className="scale-plus-animation absolute bottom-0 right-10 w-56"
+        className="scale-plus-animation absolute bottom-20 right-10 w-48"
         src={coineCubeIcon}
         alt=""
       />
