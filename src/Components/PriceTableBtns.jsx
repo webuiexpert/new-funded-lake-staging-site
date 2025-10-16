@@ -9,7 +9,12 @@ function PriceTableBtns({dollarAmount, accountAmt, getFundedLink}) {
               <span className="text-white"> {accountAmt} </span> Account
             </h3>
             <div className="flex md:flex-row flex-col md:gap-6 gap-4">
-              <PrimaryButton text="SIGNUP NOW" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
+              <div
+          className={`${
+            dollarAmount === "$375" && accountAmt === "50K" ? "hidden" : "block"
+          }`}>
+          <PrimaryButton  text="SIGNUP NOW" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
+              </div>
               <PrimaryButton text="GET FUNDED" link={getFundedLink} />
             </div>
           </div>

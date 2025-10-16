@@ -62,7 +62,7 @@ function ChooseUs() {
         alt=""
       />
       <img
-        className="scale-plus-animation absolute bottom-20 right-10 w-48"
+        className="scale-plus-animation absolute bottom-20 right-10 z-0 w-48"
         src={coineCubeIcon}
         alt=""
       />
@@ -84,7 +84,7 @@ function ChooseUs() {
             <motion.div
               variants={item1}
               key={item.id}
-              className="features-col lg:p-0 p-5 lg:border-0  border rounded-xl border-[#9a9a9a80] flex flex-col items-center justify-start space-y-4 pb-5"
+              className="features-col lg:p-0 p-5 lg:border-0 bg-[var(--accent-color)]  border rounded-xl border-[#9a9a9a80] flex flex-col items-center justify-start space-y-4 pb-5"
             >
               <div>
                 <img

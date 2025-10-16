@@ -148,6 +148,7 @@ h4 {
   justify-content: center;
   flex-direction: column;
   padding: 6px 30px;
+  cursor: pointer;
 }
 
 .evalution-phase {
