@@ -544,6 +544,19 @@ h4 {
   box-shadow: 0 6px 20px 0 rgba(67, 43, 255, 0.3);
   transition: all ease 0.2s;
 }
+/* --contact style--- */
+.form-col {
+  background-image: url("../public/assets/blue-bg-light.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.faq-bg-col {
+  background-image: url("../public/assets/blue-bg-light.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* -----------media screen-------- */
 

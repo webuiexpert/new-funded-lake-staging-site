@@ -5,8 +5,7 @@ import { div } from 'framer-motion/client'
 function WhoWeAre() {
   return (
     <div className=''>
-      {/* <WhoWeSection /> */}
-      <h3>Who we are</h3>
+      <WhoWeSection />
     </div>
     )
 }

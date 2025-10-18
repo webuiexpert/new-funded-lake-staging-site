@@ -5,7 +5,7 @@ function PrimaryButton({ text, link }) {
   return (
     <NavLink to={link} target="_blank" rel="noopener noreferrer">
       <div className="w-fit mx-auto relative transition-all duration-700">        
-        <span className="ico_creative_btn relative inline-flex items-center overflow-hidden justify-center lg:px-10 md:px-7 lg:py-5  md:py-3 py-3 px-3 rounded-lg border-2  hover:border-[#011667] border-[#011667] text-[#fff] font-semibold group">
+        <span className="ico_creative_btn relative inline-flex items-center overflow-hidden justify-center lg:px-10 md:px-7 lg:py-5  md:py-3 py-3 px-3 rounded-lg border-1  hover:border-[#011667] border-[#5d3ad8] text-[#fff] font-semibold group">
           {/* Left Arrows */}
           <span className="relative flex items-center justify-center md:mr-6 mr-3">
             <small className="btn-side-dot absolute top-[-10px] left-[-30px] w-2 h-2 bg-transparent border border-[#011667] rounded-full  opacity-70 group-hover:opacity-40 transition-all duration-300"></small>
