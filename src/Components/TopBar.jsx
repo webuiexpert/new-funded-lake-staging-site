@@ -15,7 +15,7 @@ function TopBar() {
         aria-label="Close promo" />
       <div className="flex items-center gap-4 text-white text-center md:flex-row flex-col relative py-3">
         <p className="text-[14px] md:text-xl lg:text-xl font-medium max-w-[350px] md:max-w-none">
-          10% off any program CODE: TRADE10
+          30% off any program! CODE:GHOST30 Limited time only!
         </p>
         {/* <div className="flex gap-2">
            <button
@@ -26,9 +26,9 @@ function TopBar() {
             </button>
             
         </div> */}
-        <div onClick={() => navigator.clipboard.writeText("TRADE10"
+        <div onClick={() => navigator.clipboard.writeText("GHOST30"
               )}>
-            <CopyCouponButton couponCode="TRADE10" />
+            <CopyCouponButton couponCode="GHOST30" />
         </div>
       </div>
     </div>

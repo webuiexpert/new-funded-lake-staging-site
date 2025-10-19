@@ -187,7 +187,7 @@ function StepOneFaq({ searchTerm }) {
           <div className="bg-[#000b1f] p-4 rounded-2xl" key={index}>
             <button
               onClick={() => toggle(index)}
-              className="w-full flex justify-between items-center text-left"
+              className="w-full cursor-pointer flex justify-between items-center text-left"
             >
               <span className="text-white font-semibold text-[18px]">{faq.question}</span>
             </button>

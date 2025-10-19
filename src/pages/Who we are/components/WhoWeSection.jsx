@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 function WhoWeSection() {
   return (
-    <div className="relative ">
+    <div className="relative overflow-hidden">
       <div className="overflow-hidden relative lg:pt-42 lg:pb-[40px] md:pt-32 md:pb-10 pt-24 pb-12 md:px-0 px-4 ">
         <div className="tg-bg-gradient d-block navy-bg-gradient"></div>
         <div className="navy-left-side-gradient d-block"></div>
