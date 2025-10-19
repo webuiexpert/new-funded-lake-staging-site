@@ -37,7 +37,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="lg:px-0 mx-auto relative">
+    <div className="lg:px-0 mx-auto relative bg-[var(--accent-color)]">
       <img className="saperator w-full" src={topSep} alt="" />
       <div className="md:px-0 px-8">
         <div className="form-col md:max-w-4xl md:my-16 my-10 mx-auto p-8 rounded-2xl text-white">

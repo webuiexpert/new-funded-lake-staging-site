@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" text-white shadow-md relative bg-transparent">
+    <nav className=" text-white bg-transparent absolute left-0 right-0 z-[999]">
       <div className="w-full bg-transparent sticky top-0 left-0 max-w-6xl mx-auto px-4 py-3 md:py-3 lg:px-0 lg:py-6  flex items-center justify-between">
         {/* Logo */}
         <NavLink
@@ -25,15 +25,15 @@ const Navbar = () => {
             { to: "/who-we-are", label: "WHO WE ARE" },
             { to: "/faqs", label: "FAQS" },
             { to: "/contact-us", label: "CONTACT US" },
-            { to: "/forex-expo", label: "FOREX EXPO DUBAI" },
+            { to: "#", label: "FOREX EXPO DUBAI" },
           ].map(({ to, label }) => (
             <NavLink
               key={to}
               to={to}
               className={({ isActive }) =>
                 `group relative overflow-hidden h-[24px] flex flex-col items-center font-semibold px-[15px] py-0 duration-300 ${
-                  isActive ? "text-[var(--color-primary)]" : "text-white"
-                } hover:text-[var(--color-primary)]`
+                  isActive ? "text-[var(--primary-color)]" : "text-white"
+                } hover:text-[var(--primary-color)]`
               }
             >
               {/* first (visible) */}
@@ -76,8 +76,8 @@ const Navbar = () => {
           <NavLink
             to="/who-we-are"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
-                isActive ? "text-[var(--color-primary)]" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--primary-color)] font-semibold duration-300 ${
+                isActive ? "text-[var(--primary-color)]" : "text-white"
               }`
             }
           >
@@ -86,8 +86,8 @@ const Navbar = () => {
           <NavLink
             to="/faqs"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
-                isActive ? "text-[var(--color-primary)]" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--primary-color)] font-semibold duration-300 ${
+                isActive ? "text-[var(--primary-color)]" : "text-white"
               }`
             }
           >
@@ -96,8 +96,8 @@ const Navbar = () => {
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-[var(--color-primary)] font-semibold duration-300 ${
-                isActive ? "text-[var(--color-primary)]" : "text-white"
+              `px-[15px] py-0 hover:text-[var(--primary-color)] font-semibold duration-300 ${
+                isActive ? "text-[var(--primary-color)]" : "text-white"
               }`
             }
           >

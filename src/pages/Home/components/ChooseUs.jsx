@@ -88,7 +88,7 @@ function ChooseUs() {
             >
               <div>
                 <img
-                  className="border-[var(--color-primary)] border-2 p-4 lg:w-auto md:w-16 w-20 rounded-full mx-auto"
+                  className="border-[var(--primary-color)] border-2 p-4 lg:w-auto md:w-16 w-20 rounded-full mx-auto"
                   src={item.fimg}
                   alt="feature-img"
                 />

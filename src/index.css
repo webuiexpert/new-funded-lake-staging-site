@@ -4,7 +4,7 @@
 /* Global font and color setup */
 :root {
   --font-primary: "Montserrat", Helvetica, Arial, sans-serif;
-  --color-primary: #00c4f4; /* Example: Bootstrap blue */
+  --primary-color: #00c4f4; /* Example: Bootstrap blue */
   --color-secondary: #e8b763; /* Gold-like color */
   --color-dark: #1e293b; /* Slate dark */
   --color-light: #f8fafc; /* Light gray */
@@ -12,6 +12,18 @@
   --black-color: #000;
   --accent-color: #00080e;
 }
+
+::-webkit-scrollbar {
+  width: 1.8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--accent-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+} 
 
 @layer utilities {
   .radial-bg {
@@ -52,14 +64,14 @@ h2 {
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.3;
-  color: var(--color-primary);
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 h4 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.3;
-  color: var(--color-primary);
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 
@@ -164,6 +176,12 @@ h4 {
   background-size: cover;
 }
 .comparision-box {
+  background-image: url("../public/assets/blue-bg-light.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mission-col {
   background-image: url("../public/assets/blue-bg-light.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -291,8 +309,8 @@ h4 {
     #000760 23.96%,
     #42005300 90%
   );
-  top: -5%;
-  right: -10%;
+  top: -29%;
+  right: -5%;
   transform: translateY(-8%) rotate(40deg);
   z-index: 1;
 }
@@ -348,8 +366,8 @@ h4 {
 }
 
 .ripple-shape2 span {
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   position: absolute;
   right: 40px;
   top: 10%;
@@ -570,7 +588,7 @@ h4 {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.3;
-    color: var(--color-primary);
+    color: var(--primary-color);
     text-transform: uppercase;
   }
   .hero-gradient-ball {
@@ -620,7 +638,7 @@ h4 {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.3;
-    color: var(--color-primary);
+    color: var(--primary-color);
     text-transform: uppercase;
     text-wrap-mode: wrap;
   }

@@ -180,7 +180,7 @@ function StepOneFaq({ searchTerm }) {
             transition={{ duration: 1, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.4 }} //
           >
-            <span className="text-[var(--color-primary)]">one</span> step 
+            <span className="text-[var(--primary-color)]">one</span> step 
           </motion.h3>
       <div className="space-y-4 ">
         {filteredFaqs.map((faq, index) => (

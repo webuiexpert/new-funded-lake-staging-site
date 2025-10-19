@@ -28,7 +28,7 @@ function SuccessStory() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:mt-8 mt-4">
           <div className="order-2 md:order-1">
             <p className="text-gray-300 mb-4 md:text-lg text-sm">
-              <span className="font-semibold text-[var(--color-primary)]">Arjun Mehta </span>
+              <span className="font-semibold text-[var(--primary-color)]">Arjun Mehta </span>
               from India turned a $50,000 FundedLake 2-Step account purchased
               for just $225 into a life changing payout in just 8 days. What
               started as a simple challenge quickly transformed into a powerful

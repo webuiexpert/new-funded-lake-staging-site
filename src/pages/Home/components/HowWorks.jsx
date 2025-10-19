@@ -85,13 +85,13 @@ function HowWorks() {
               </h3>
               <ul className="space-y-4 text-start inline-block">
                 <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
-                  <span className="text-[var(--color-primary)] text-xl">✔</span>
+                  <span className="text-[var(--primary-color)] text-xl">✔</span>
                   <span className="font-bold text-gray-200">
                     REACH PROFIT TARGET
                   </span>
                 </li>
                 <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
-                  <span className="text-[var(--color-primary)] text-xl">✔</span>
+                  <span className="text-[var(--primary-color)] text-xl">✔</span>
                   <span className="font-bold text-gray-200">
                     DO NOT VIOLATE MAX & DAILY DRAWDOWN
                   </span>
@@ -128,7 +128,7 @@ function HowWorks() {
               </h3>
               <ul className="space-y-4 text-start inline-block">
                 <li className="flex justify-start items-center space-x-3">
-                  <span className="text-[var(--color-primary)] text-xl">✔</span>
+                  <span className="text-[var(--primary-color)] text-xl">✔</span>
                   <span className="font-bold text-gray-200  lg:text-5xl md:text-3xl text-2xl">$109.200</span>
                 </li>
               </ul>
@@ -163,13 +163,13 @@ function HowWorks() {
               </h3>
               <ul className="space-y-4 text-start inline-block">
                 <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
-                  <span className="text-[var(--color-primary)] text-xl">✔</span>
+                  <span className="text-[var(--primary-color)] text-xl">✔</span>
                   <span className="font-bold text-gray-200">
                     Withdraw as soon as you get funded
                   </span>
                 </li>
                 <li className="flex justify-start items-start space-x-3 lg:text-xl md:text-[12px] uppercase text-md">
-                  <span className="text-[var(--color-primary)] text-xl">✔</span>
+                  <span className="text-[var(--primary-color)] text-xl">✔</span>
                   <span className="font-bold text-gray-200">
                     First payout is instant
                   </span>

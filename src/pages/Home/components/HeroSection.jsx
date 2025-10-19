@@ -6,7 +6,7 @@ import ScrollDownIndicator from "../../../Components/ScrollDownIndicator";
 
 function HeroSection() {
   return (
-    <div className="hero-section lg:py-24 md:py-10 py-16 lg:h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
+    <div className="hero-section lg:py-24  md:py-10 py-16 lg:h-screen md:px-0 px-4 pt-10 md:pt-0 relative overflow-hidden">
       <div className="tg-bg-gradient d-block navy-bg-gradient"></div>
       <div className="navy-left-side-gradient d-block"></div>
       <div className="upDownAnim tg-bg-gradient d-block hero-gradient-ball alltuchtopdown bg-[radial-gradient(114.99% 94.16% at 72.92% 82.18%,#111111 47.39%,#091534 68.23%,#00c4f4 86.63%)]"></div>
@@ -26,7 +26,7 @@ function HeroSection() {
         src={lockerIcon}
         alt=""
       />
-      <div className="text-center relative z-10 md:mt-7">
+      <div className="text-center relative z-10 md:mt-12">
         <motion.h1
           className="text-white font-bold text-xl  md:text-5xl lg:text-[80px] leading-tight"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -34,9 +34,9 @@ function HeroSection() {
           transition={{ duration: 1, ease: "easeInOut" }}
           viewport={{ once: true, amount: 0.4 }} //
         >
-          WHERE <span className="text-[var(--color-primary)]">TRADERS</span>
+          WHERE <span className="text-[var(--primary-color)]">TRADERS</span>
           <br />
-          <span className="text-[var(--color-primary)]">EMPOWER </span>TRADERS
+          <span className="text-[var(--primary-color)]">EMPOWER </span>TRADERS
         </motion.h1>
         <p className="text-white text-sm  md:text-xl lg:text-2xl max-w-4xl mt-6 font-medium mx-auto">
           “Lightning-fast payouts, instant funding, no hidden rules or

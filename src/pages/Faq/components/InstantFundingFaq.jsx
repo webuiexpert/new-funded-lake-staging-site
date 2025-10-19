@@ -188,7 +188,7 @@ function InstantFundingFaq({ searchTerm }) {
             transition={{ duration: 1, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.4 }} //
           >
-            <span className="text-[var(--color-primary)]">INSTANT FUNDING</span> STEP QUESTIONS
+            <span className="text-[var(--primary-color)]">INSTANT FUNDING</span> STEP QUESTIONS
           </motion.h3>
       <div className="space-y-4 ">
         {filteredFaqs.map((faq, index) => (
