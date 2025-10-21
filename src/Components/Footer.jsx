@@ -135,7 +135,7 @@ function Footer() {
               </li>
              
              <li>
-               <NavLink to="#">  <img className="inline" src={checkIcon} alt="" /> Do Not Violate Max & Daily Drawdown </NavLink> 
+               <NavLink to="#">  <img className="inline" src={checkIcon} alt="" /> Do Not Violate Max & Daily Drawdown</NavLink> 
               </li>
             </ul>
           </div>
