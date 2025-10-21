@@ -56,7 +56,7 @@ function TrustPilotMarquee() {
         <img className="shape_circle" src={circleShape} alt="" />
       </div>
 
-      <div className="flex flex-wrap w-full md:mb-10 mb-8 flex-col items-center text-center">
+      {/* <div className="flex flex-wrap w-full md:mb-10 mb-8 flex-col items-center text-center">
         <motion.h2
           className="sm:text-[50px] text-2xl font-bold title-font mb-2 text-white"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -68,7 +68,7 @@ function TrustPilotMarquee() {
           <br />
           <span className="text-gredient">TRUST PILOT</span> REVIEWS
         </motion.h2>
-      </div>
+      </div> */}
 
       <div className="trustPilot-container relative overflow-hidden">
         <div className="trustPilot-marquee flex">

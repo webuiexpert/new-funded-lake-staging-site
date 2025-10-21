@@ -50,7 +50,7 @@ function HeroSection() {
           link="https://discord.gg/vDSnjmxndy"
         />
        <div className="flex flex-col gap-4 items-center w-full justify-center">
-         <PrimaryButton text="Signup now" link="https://fundedlakzedashboard.propaccount.com/en/sign-up" />
+         <PrimaryButton text="Signup now" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
         <div className="md:hidden block">
           <PrimaryButton text="Get Funded" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
         </div>

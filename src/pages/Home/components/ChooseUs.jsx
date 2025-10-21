@@ -22,21 +22,21 @@ function ChooseUs() {
       icon: <Zap size={40} className="text-cyan-400" />,
       fimg: featureImg2,
       title: "LIGHTNING-FAST PAYOUTS",
-      desc: "Get access to capital and start trading immediately with no waiting, no delays.",
+      desc: "Withdraw your profits in as little as 24 hours.",
     },
     {
       id: 3,
       icon: <Hourglass size={40} className="text-cyan-400" />,
       fimg: featureImg3,
       title: "NO TIME LIMITS",
-      desc: "Get access to capital and start trading immediately with no waiting, no delays.",
+      desc: "Trade at your own pace with no maximum days to complete challenges.",
     },
     {
       id: 4,
       icon: <Tag size={40} className="text-cyan-400" />,
       fimg: featureImg4,
       title: "AFFORDABLE PRICING",
-      desc: "Get access to capital and start trading immediately with no waiting, no delays.",
+      desc: "Top-tier funding programs at unbeatable rates.",
     },
   ];
 
@@ -84,7 +84,7 @@ function ChooseUs() {
             <motion.div
               variants={item1}
               key={item.id}
-              className="features-col lg:p-0 p-5 lg:border-0 bg-[var(--accent-color)]  border rounded-xl border-[#9a9a9a80] flex flex-col items-center justify-start space-y-4 pb-5"
+              className="features-col group lg:p-0 p-5 lg:border-0 bg-[var(--accent-color)]  border rounded-xl border-[#9a9a9a80] flex flex-col items-center justify-start space-y-4 pb-5"
             >
               <div>
                 <img
@@ -93,10 +93,10 @@ function ChooseUs() {
                   alt="feature-img"
                 />
               </div>
-              <h3 className="font-bold lg:text-lg md:text-lg tracking-wide lg:w-37 leading-6">
+              <h3 className="font-bold group-hover:text-[var(--primary-color)] duration-300 lg:text-lg md:text-lg tracking-wide lg:w-37 leading-6">
                 {item.title}
               </h3>
-              <p className="text-gray-400 text-sm max-w-[220px]">{item.desc}</p>
+              <p className="text-gray-400 group-hover:text-white duration-200 text-sm max-w-[220px]">{item.desc}</p>
             </motion.div>
           ))}
         </motion.div>

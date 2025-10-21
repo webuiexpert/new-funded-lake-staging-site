@@ -1,11 +1,9 @@
+import { motion } from "framer-motion";
 import tradeIcon1 from "/assets/trade-icon1.png";
 import tradeIcon2 from "/assets/trade-icon2.png";
 import tradeIcon3 from "/assets/trade-icon3.png";
 import tradeIcon4 from "/assets/trade-icon4.png";
 import tradeIcon5 from "/assets/trade-icon5.png";
-import walletIcon from "/assets/shape_wallet.png";
-import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
-import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const cardVariants = {
@@ -17,35 +15,14 @@ const cardVariants = {
   }),
 };
 
-
-
-function TradingSection() {
+export default function InvestOptions() {
   return (
-    <div className="relative pt-10 pb-20">
-      <img
-        className="upDownAnim absolute lg:w-36 md:w-24 w-20 md:bottom-10 md:left-2 left-5 bottom-5 opacity-60"
-        src={walletIcon}
-        alt=""
-      />
-      <img
-        className="scale-plus-animation absolute right-20 top-56 w-56 z-[0]"
-        src={coineCubeIcon}
-        alt=""
-      />
+    <section className="bg-black text-white lg:py-24 md:py-10 py-4 px-4 text-center">
+      <h2 class="text-center mb-16 lg:text-6xl md:text-4xl text-3xl font-bold">
+        TRADE ANY MARKET, <span className="text-primary"> YOUR WAY </span>
+      </h2>
 
-      {/* Heading animation */}
-      <motion.h2
-        className="md:leading-[1.1em] font-bold title-font mb-16 text-center text-white"
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: "easeInOut" }}
-        viewport={{ once: true, amount: 0.4 }}
-      >
-        <span className="text-white">TRADE ANY MARKET,</span>
-        <br /> YOUR WAY
-      </motion.h2>
-
-      <div className="row flex md:flex-row flex-col justify-between items-center md:max-w-5xl mx-auto gap-5 md:px-0 px-10">
+      <div className="row flex md:flex-row flex-col justify-between items-center md:max-w-5xl mx-auto gap-5">
         <StyledWrapper className="w-full">
           <motion.div
             className="card"
@@ -55,7 +32,7 @@ function TradingSection() {
             viewport={{ once: true, amount: 0.3 }}
             custom={0}
           >
-            <div className="bg trade-col" />
+            <div className="bg" />
             <div className="blob" />
             <div className="relative z-10 flex flex-col items-center justify-center">
               <img src={tradeIcon1} alt="" />
@@ -73,7 +50,7 @@ function TradingSection() {
             viewport={{ once: true, amount: 0.3 }}
             custom={0.15}
           >
-            <div className="bg trade-col" />
+            <div className="bg" />
             <div className="blob" />
             <div className="relative z-10 flex flex-col items-center justify-center">
               <img src={tradeIcon2} alt="" />
@@ -82,15 +59,13 @@ function TradingSection() {
           </motion.div>
         </StyledWrapper>
         <StyledWrapper className="w-full">
-          <motion.div
-            className="card"
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            custom={0.3}
-          >
-            <div className="bg trade-col" />
+          <motion.div className="card"
+          variants={cardVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          custom={0.3}>
+            <div className="bg" />
             <div className="blob" />
             <div className="relative z-10 flex flex-col items-center justify-center">
               <img src={tradeIcon3} alt="" />
@@ -99,7 +74,7 @@ function TradingSection() {
           </motion.div>
         </StyledWrapper>
       </div>
-      <div className="row mt-7 flex md:flex-row flex-col justify-between items-center md:max-w-5xl mx-auto gap-5 md:px-0 px-10">
+      <div className="row mt-7 flex md:flex-row flex-col justify-between items-center md:max-w-5xl mx-auto gap-5">
         <div className="w-[30%]"></div>
 
         <StyledWrapper className="w-full">
@@ -111,7 +86,7 @@ function TradingSection() {
             viewport={{ once: true, amount: 0.3 }}
             custom={0.45}
           >
-            <div className="bg trade-col" />
+            <div className="bg" />
             <div className="blob" />
             <div className="relative z-10 flex flex-col items-center justify-center">
               <img src={tradeIcon4} alt="" />
@@ -120,15 +95,14 @@ function TradingSection() {
           </motion.div>
         </StyledWrapper>
         <StyledWrapper className="w-full">
-          <motion.div
-            className="card"
-            variants={cardVariants}
+          <motion.div className="card"
+          variants={cardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             custom={0.6}
           >
-            <div className="bg trade-col" />
+            <div className="bg" />
             <div className="blob" />
             <div className="relative z-10 flex flex-col items-center justify-center">
               <img src={tradeIcon5} alt="" />
@@ -141,7 +115,7 @@ function TradingSection() {
 
         <div className="w-[30%]"></div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -158,9 +132,6 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
-    .card img{
-    width:80px;
-    }
 
   .bg {
     position: absolute;
@@ -169,27 +140,26 @@ const StyledWrapper = styled.div`
     width: 97%;
     height: 240px;
     z-index: 2;
+    background: #181818;
     backdrop-filter: blur(24px);
     border-radius: 20px;
     overflow: hidden;
-    outline: 2px solid #022150;
-    overflow: hidden;
+    outline: 4px solid #022150;
   }
 
   .blob {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 150px;
-  border-radius: 50%;
-  background: #00c4f4;
-  opacity: 0.9;
-  filter: blur(25px);
-  animation: blob-bounce 5s infinite ease-in-out;
-  transform: translate(-50%, -50%);
-}
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fcaf17;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
 
   @keyframes blob-bounce {
     0% {
@@ -213,5 +183,3 @@ const StyledWrapper = styled.div`
     }
   }
 `;
-
-export default TradingSection;

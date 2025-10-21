@@ -20,7 +20,7 @@ function PriceTab() {
           alt=""
         />
         <div class="navy-side-gradient d-block"></div>
-        <div className="flex flex-wrap w-full lg:mb-20 mb-10 flex-col items-center text-center">
+        <div className="flex flex-wrap w-full lg:mb-12 mb-10 flex-col items-center text-center">
           <motion.h2
             className="md:leading-[1.1em] font-bold title-font mb-2 text-white"
             initial={{ opacity: 0, scale: 0.8 }}

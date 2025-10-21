@@ -77,7 +77,7 @@ export default () => (
         </TabPanel>
         <TabPanel className="400K">
           <OneStepPriceCard />
-           <PriceTableBtns dollarAmount="$3,600" accountAmt="4000K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" />
+           <PriceTableBtns dollarAmount="$3,600" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" />
           
         </TabPanel>
       </Tabs>

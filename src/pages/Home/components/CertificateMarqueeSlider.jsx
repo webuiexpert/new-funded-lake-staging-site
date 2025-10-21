@@ -1,10 +1,10 @@
-import img7 from "/assets/certificate-of-withdrawl7.jpg";
 import img1 from "/assets/certificate-of-withdrawl1.jpeg";
 import img2 from "/assets/certificate-of-withdrawl2.jpeg";
 import img3 from "/assets/certificate-of-withdrawl3.jpeg";
 import img4 from "/assets/certificate-of-withdrawl4.jpeg";
 import img5 from "/assets/certificate-of-withdrawl5.jpeg";
 import img6 from "/assets/certificate-of-withdrawl6.jpeg";
+import img7 from "/assets/certificate-of-withdrawl7.jpg";
 import img8 from "/assets/certificate-of-withdrawl8.jpg";
 import img9 from "/assets/certificate-of-withdrawl9.jpg";
 import img10 from "/assets/certificate-of-withdrawl10.jpg";
@@ -16,32 +16,19 @@ import img15 from "/assets/certificate-of-withdrawl15.jpg";
 import img16 from "/assets/certificate-of-withdrawl16.jpg";
 import img17 from "/assets/certificate-of-withdrawl17.jpg";
 import img18 from "/assets/certificate-of-withdrawl18.jpg";
+import img19 from '/assets/certificate-of-withdrawl19.jpg'; 
+import img20 from '/assets/certificate-of-withdrawl20.jpg'; 
+import img21 from '/assets/certificate-of-withdrawl21.jpg'; 
+import img22 from '/assets/certificate-of-withdrawl22.jpg'; 
+import img23 from '/assets/certificate-of-withdrawl23.jpg'; 
+import img24 from '/assets/certificate-of-withdrawl24.jpg';  
 import topSep from "/assets/top-saprator.jpg";
 import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 
 const CertificateMarqueeSlider = () => {
   // Latest images first
-  const images = [
-    img18,
-    img17,
-    img16,
-    img15,
-    img14,
-    img13,
-    img12,
-    img11,
-    img10,
-    img9,
-    img8,
-    img7,
-    img6,
-    img5,
-    img4,
-    img3,
-    img2,
-    img1,
-  ];
+  const images = [img21, img22, img23, img24, img20, img19, img18, img17, img16, img15, img14, img13, img12, img11, img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
 
   return (
     <div className="overflow-hidden py-6 md:py-10 lg:pb-32 min-w-full relative">

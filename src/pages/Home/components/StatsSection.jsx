@@ -7,7 +7,7 @@ import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 const stats = [
   {
     label: "Active Traders",
-    value: 300,
+    value: 500,
     suffix: "+",
   },
   {
@@ -16,8 +16,8 @@ const stats = [
     suffix: "+",
   },
   {
-    label: "Payouts Processed",
-    value: 40,
+    label: "In payouts processed",
+    value: 80,
     suffix: "K+",
   },
 ];
@@ -70,7 +70,7 @@ export default function StatsSection() {
                 <span class="dot_3 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  top-5 right-5 rounded-full"></span>
                 <span class="dot_4 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[7px] z-[1]  bottom-5 right-5 rounded-full"></span>
             <div className="font-bold text-white bg-[#070710] w-full h-full flex items-center justify-center flex-col md:gap-4 gap-2 rounded-2xl">
-              <div className="flex lg:text-5xl md:text-3xl text-3xl relative items-center rounded-2xl justify-center w-[100%]">
+              <div className="flex lg:text-4xl md:text-3xl text-3xl relative items-center rounded-2xl justify-center w-[100%]">
                 {inView && (
                 <CountUp
                   end={stat.value}
@@ -80,7 +80,7 @@ export default function StatsSection() {
                 />
               )}
               </div>
-               <p className="lg:text-3xl text-[18px] font-semibold">{stat.label}</p>
+               <p className="lg:text-2xl text-[18px] font-semibold">{stat.label}</p>
             </div>
            
           </motion.div>

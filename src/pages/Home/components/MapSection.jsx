@@ -37,7 +37,7 @@ const MapSection = () => {
           At FundedLake, we are proud to say that we empower traders over 20+ countries and COUNTING.
           Our growing international presence proves that great trading opportunities know no borders.
         </p>
-        <PrimaryButton text="Find out more about us"  link="#"/>
+        <PrimaryButton text="Find out more about us"  link="/who-we-are"/>
       </motion.div>
     </div>
   );
