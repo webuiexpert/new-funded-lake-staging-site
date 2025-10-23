@@ -68,6 +68,7 @@ function Home() {
       <CertificateMarqueeSlider />
       <TraderWorld />
       <TrustPilotMarquee />
+      
     </div>
   )
 }

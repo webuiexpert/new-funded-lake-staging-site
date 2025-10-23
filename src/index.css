@@ -13,17 +13,30 @@
   --accent-color: #00080e;
 }
 
+/* ==== GLOBAL SCROLLBAR STYLE ==== */
 ::-webkit-scrollbar {
-  width: 1.8px;
+  width: 10px; /* scrollbar width */
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--accent-color);
+  background: #0a061f; /* background color of the track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-} 
+  background: linear-gradient(180deg, #221f4a, #080611); /* scrollbar thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00c4f4, #0e0b24);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0a061f #00c4f4;
+}
+
 
 @layer utilities {
   .radial-bg {

@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import { X, Mail } from "lucide-react";
 // import popupImg from "../assets/popupImg.png";
 import popupImg100 from "/assets/popupImg-100k.png";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import PrimaryButton from "./PrimaryButton";
 
 function EmailPopup() {
   const [show, setShow] = useState(false);
-  const [message, setMessage] = useState("");
-  const form = useRef();
+  // const [message, setMessage] = useState("");
+  // const form = useRef();
 
   useEffect(() => {
     const timer = setTimeout(() => setShow(true), 500);
@@ -22,36 +22,36 @@ function EmailPopup() {
     };
   }, [show]);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_thi1qfl", // Replace with your EmailJS service ID
-        "template_bwdpwa7", // Replace with your EmailJS template ID
-        form.current,
-        {
-          publicKey: "iSAUlRGczFV4MCVV6", // Replace with your EmailJS public key
-        }
-      )
-      .then(
-        () => {
-          setMessage("✅ Email submitted successfully!");
-          form.current.reset();
-          setTimeout(() => setMessage(""), 4000);
-        },
-        (error) => {
-          setMessage("❌ Failed to submit. Please try again.");
-          setTimeout(() => setMessage(""), 4000);
-        }
-      );
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_thi1qfl", // Replace with your EmailJS service ID
+  //       "template_bwdpwa7", // Replace with your EmailJS template ID
+  //       form.current,
+  //       {
+  //         publicKey: "iSAUlRGczFV4MCVV6", // Replace with your EmailJS public key
+  //       }
+  //     )
+  //     .then(
+  //       () => {
+  //         setMessage("✅ Email submitted successfully!");
+  //         form.current.reset();
+  //         setTimeout(() => setMessage(""), 4000);
+  //       },
+  //       (error) => {
+  //         setMessage("❌ Failed to submit. Please try again.");
+  //         setTimeout(() => setMessage(""), 4000);
+  //       }
+  //     );
+  // };
 
   if (!show) return null;
 
   return (
     <div className="fixed inset-0 bg-[#000000cb] bg-opacity-60 z-[9999] flex md:items-center justify-center font-lexend">
-      <div className="email-pop relative bg-gradient-to-br from-[#221f4a] to-[#080611] text-white w-[100%] overflow-y-auto lg:max-w-5xl md:max-w-[90%] max-w-[320px] md:mt-5 mt-6 px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 overscroll-contain touch-auto">
+      <div className="email-pop relative bg-gradient-to-br from-[#221f4a] to-[#080611] text-white w-[100%] overflow-y-auto lg:max-w-5xl max-w-[90%] md:mt-5 mt-6 px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 overscroll-contain touch-auto">
         <button
           className="absolute top-3 right-3 cursor-pointer text-white text-4xl font-bold"
           onClick={() => setShow(false)}
@@ -59,7 +59,23 @@ function EmailPopup() {
           <X className="bg-[#dd0000] rounded-full p-1 md:size-6 size-6" />
         </button>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+        <iframe
+          src="https://c1bbd682.sibforms.com/serve/MUIFAOiQlwKSnl2D6DmemYvQQDYMOaXu2I8RJ8y9-DvzkBzM_VEuZhXinHxRM-_GixilaCEDOsh2ZlO9KReqUkata1eE09xgWB7PpUZ5P4P9l1sr0vp-Xb-tq8HScQUh4TxQ-hKhlofA0P14vco3pW9WDLo1IpEwCO716aJvZuAQMCQyX4HPJFbKIbXGHwzDOBu8M5rqMUQMXU0rOA=="
+          width="100%"
+          height="400"
+          frameBorder="0"
+          scrolling="auto"
+          allowFullScreen
+          style={{
+            border: "none",
+            borderRadius: "8px",
+            background: "#fff",
+            marginTop: "1rem",
+          }}
+          title="Brevo Signup Form"
+        ></iframe>
+
+        {/* <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
           <img className="border-2 md:w-full w-[60%] md-mx-0 mx-auto" src={popupImg100} alt="" />
           <div className="popupContent text-start flex-col flex justify-around">
             <h3 className="font-semibold md:text-[20px] text-[18px] text-center md:text-left">
@@ -101,7 +117,7 @@ function EmailPopup() {
               <PrimaryButton text="SIGNUP NOW" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
