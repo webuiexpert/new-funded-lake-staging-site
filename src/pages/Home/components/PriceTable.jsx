@@ -40,8 +40,7 @@ export default () => (
             $100K
             <br />
             <span className="lg:text-[10px] text-[5px] text-[#fff608]">
-              {" "}
-              MOST POPULAR{" "}
+              MOST POPULAR
             </span>
           </Tab>
           <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">

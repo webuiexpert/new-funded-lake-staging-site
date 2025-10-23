@@ -13,7 +13,6 @@ function PriceTableBtns({dollarAmount, accountAmt, getFundedLink}) {
           className={`${
             dollarAmount === "$375" && accountAmt === "50K" ? "hidden" : "block"
           }`}>
-          <PrimaryButton  text="SIGNUP NOW" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
               </div>
               <PrimaryButton text="GET FUNDED" link={getFundedLink} />
             </div>

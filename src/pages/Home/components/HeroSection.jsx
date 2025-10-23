@@ -26,7 +26,7 @@ function HeroSection() {
         src={lockerIcon}
         alt=""
       />
-      <div className="text-center relative z-10 md:mt-12">
+      <div className="text-center relative z-10 md:mt-16 mt-16">
         <motion.h1
           className="text-white font-bold text-xl  md:text-5xl lg:text-[80px] leading-tight"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -44,12 +44,12 @@ function HeroSection() {
           capital!”
         </p>
       </div>
-      <div className="my-10 text-center flex flex-col lg:gap-8 md:gap-6 gap-5 relative z-20">
+      <div className="my-10 text-center flex flex-col lg:gap-8 gap-6 relative z-20">
         <PrimaryButton
           text="Join our discord community"
           link="https://discord.gg/vDSnjmxndy"
         />
-       <div className="flex flex-col gap-4 items-center w-full justify-center">
+       <div className="flex flex-col gap-6 items-center w-full justify-center">
          <PrimaryButton text="Signup now" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
         <div className="md:hidden block">
           <PrimaryButton text="Get Funded" link="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />

@@ -10,7 +10,13 @@ const Navbar = () => {
 
   return (
     <nav className=" text-white bg-transparent absolute left-0 right-0 z-[999]">
-      <div className="w-full bg-transparent sticky top-0 left-0 max-w-6xl mx-auto px-4 py-3 md:py-3 lg:px-0 lg:py-6  flex items-center justify-between">
+      <div
+        className={`w-full sticky top-0 left-0 max-w-6xl mx-auto px-4 py-3 md:py-3 lg:px-0 lg:py-6  flex items-center justify-between ${
+          isOpen
+            ? "lg:bg-transparent bg-[var(--accent-color)]"
+            : "bg-transparent"
+        }`}
+      >
         {/* Logo */}
         <NavLink
           to="/"
@@ -72,7 +78,11 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="lg:hidden mt-3 space-y-2 text-center flex flex-col md:items-center md:justify-center md:px-0 px-4 pb-6 items-start md:gap-4 gap-5">
+        <div
+          className={`lg:hidden mt-0 space-y-2 text-center flex flex-col px-4 pb-6 pt-4 items-start md:gap-4 gap-5 ${
+            isOpen ? "bg-[var(--accent-color)]" : "bg-transparent"
+          }`}
+        >
           <NavLink
             to="/who-we-are"
             className={({ isActive }) =>
