@@ -58,8 +58,17 @@ function EmailPopup() {
         >
           <X className="bg-[#dd0000] rounded-full p-1 md:size-6 size-6" />
         </button>
-
-        <iframe
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+          <img className="border-2 md:w-full w-[60%] md-mx-0 mx-auto" src={popupImg100} alt="" />
+          <div className="popupContent text-start flex-col flex justify-around">
+            <h3 className="font-semibold md:text-[20px] text-[18px] text-center md:text-left">
+              ⚡WIN A FREE 100k 2-STEP CHALLENGE GIVEAWAY ⚡
+            </h3>
+            <p className="lg:text-2xl md:text-base text-sm mt-4 text-center md:text-left">
+              Enter your email and join our discord for a chance to win a 100k 2-Step challenge account
+              Winner will be announced on discord
+            </p>
+            <iframe
           src="https://c1bbd682.sibforms.com/serve/MUIFAOiQlwKSnl2D6DmemYvQQDYMOaXu2I8RJ8y9-DvzkBzM_VEuZhXinHxRM-_GixilaCEDOsh2ZlO9KReqUkata1eE09xgWB7PpUZ5P4P9l1sr0vp-Xb-tq8HScQUh4TxQ-hKhlofA0P14vco3pW9WDLo1IpEwCO716aJvZuAQMCQyX4HPJFbKIbXGHwzDOBu8M5rqMUQMXU0rOA=="
           width="100%"
           height="400"
@@ -74,19 +83,8 @@ function EmailPopup() {
           }}
           title="Brevo Signup Form"
         ></iframe>
-
-        {/* <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
-          <img className="border-2 md:w-full w-[60%] md-mx-0 mx-auto" src={popupImg100} alt="" />
-          <div className="popupContent text-start flex-col flex justify-around">
-            <h3 className="font-semibold md:text-[20px] text-[18px] text-center md:text-left">
-              ⚡WIN A FREE 100k 2-STEP CHALLENGE GIVEAWAY ⚡
-            </h3>
-            <p className="lg:text-2xl md:text-base text-sm mt-4 text-center md:text-left">
-              Enter your email and join our discord for a chance to win a 100k 2-Step challenge account
-              Winner will be announced on discord
-            </p>
              
-            <form
+            {/* <form
               ref={form}
               onSubmit={sendEmail}
               className="flex flex-col gap-2 items-start mt-8"
@@ -110,14 +108,14 @@ function EmailPopup() {
               {message && (
                 <p className="text-sm font-semibold mt-2">{message}</p>
               )}
-            </form>
+            </form> */}
             
             <div className="contact-btns md:gap-5 gap-2 my-6 flex flex-col justify-center">
               <PrimaryButton text="JOIN OUR DISCORD" link="https://discord.gg/vDSnjmxndy" />
               <PrimaryButton text="SIGNUP NOW" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
